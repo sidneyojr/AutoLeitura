@@ -1,6 +1,6 @@
 //visualizar conta
 import 'package:flutter/material.dart';
-import 'package:autoleitura/login.dart';
+import 'package:autoleitura/home.dart';
 
 // main
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Login(),
+      home: Home(),
     );
   }
 }

@@ -6,6 +6,9 @@ A partir de 02/2024 estes valores além de ser calculado mensalmente devem ser f
 
 ## Flutter project
 
+### Paulo Antunes da Silva Junior
+### Sidney de Oliveira Junior
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
