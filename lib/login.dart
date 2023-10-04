@@ -1,6 +1,7 @@
 // home
-import 'package:autoleitura/main.dart';
+import 'package:autoleitura/conta.dart';
 import 'package:flutter/material.dart';
+//import 'package:autoleitura/main.dart';
 
 class Login extends StatelessWidget {
   final cpfController = TextEditingController();
