@@ -1,4 +1,3 @@
-//visualizar conta
 import 'package:flutter/material.dart';
 
 class Conta extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:autoleitura/login.dart';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
