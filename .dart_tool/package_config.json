@@ -149,10 +149,10 @@
       "name": "autoleitura",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-10-12T03:38:31.415781Z",
+  "generated": "2023-10-12T04:37:03.757752Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }
