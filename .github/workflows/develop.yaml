@@ -14,6 +14,6 @@ jobs:
       uses: britannio/action-install-flutter@v1.1
       with:
     # The channel/version of Flutter to be used e.g., beta or 2.0.0
-        version: stable
+        version: 3.13.0
     - name: Build
-      run: sudo flutter build web    
+      run: flutter build web    
