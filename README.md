@@ -1,4 +1,4 @@
-![Logo Água na Torneira](/home/sidney/Imagens/agua-da-torneira-isolada-no-fundo-branco/9wd1_qx8l_230202_v2.png) 
+![Logo Água na Torneira](https://github.com/sidneyojr/AutoLeitura/blob/master/imagens/9wd1_qx8l_230202_v2.png)
 
 # AutoLeitura
 
@@ -25,6 +25,9 @@ A Flutter project.
 Este projeto é um ponto de partida para uma aplicação Flutter.
 
 Antes do app mobile você pode acompanhar a evolução do projeto clicando no link [AutoLeitura](https://auto-leitura.vercel.app/)
+
+A imagem original pode ser acessada em *[Imagem Original](https://encurtador.com.br/hiwZ3)*
+
 
 
 
