@@ -33,15 +33,9 @@
     },
     {
       "name": "cupertino_icons",
-<<<<<<< HEAD
-      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-=======
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
->>>>>>> feature-dart
     },
     {
       "name": "fake_async",
@@ -57,15 +51,9 @@
     },
     {
       "name": "flutter_lints",
-<<<<<<< HEAD
-      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-=======
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
->>>>>>> feature-dart
     },
     {
       "name": "flutter_test",
@@ -75,15 +63,9 @@
     },
     {
       "name": "lints",
-<<<<<<< HEAD
-      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-=======
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
->>>>>>> feature-dart
     },
     {
       "name": "matcher",
@@ -167,17 +149,10 @@
       "name": "autoleitura",
       "rootUri": "../",
       "packageUri": "lib/",
-<<<<<<< HEAD
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-10-20T00:20:04.220659Z",
-=======
-      "languageVersion": "2.18"
-    }
-  ],
-  "generated": "2023-10-12T05:03:26.226631Z",
->>>>>>> feature-dart
+  "generated": "2023-10-20T00:35:03.853305Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }
