@@ -1,7 +1,10 @@
-2023/10/19-21:53:27.735 ee15 Reusing MANIFEST /tmp/flutter_tools.YYMFIO/flutter_tools_chrome_device.TJEPKX/Default/shared_proto_db/MANIFEST-000001
-2023/10/19-21:53:27.735 ee15 Recovering log #7
-2023/10/19-21:53:27.736 ee15 Reusing old log /tmp/flutter_tools.YYMFIO/flutter_tools_chrome_device.TJEPKX/Default/shared_proto_db/000007.log 
-2023/10/19-21:53:27.736 ee15 Delete type=2 #8
-2023/10/19-21:53:27.736 ee15 Delete type=0 #3
-2023/10/19-21:53:27.736 ee15 Delete type=2 #5
-2023/10/19-21:53:27.736 ee15 Delete type=0 #4
+2023/10/19-21:55:49.990 f31d Reusing MANIFEST /tmp/flutter_tools.GSJDTF/flutter_tools_chrome_device.UMTOAC/Default/shared_proto_db/MANIFEST-000001
+2023/10/19-21:55:49.990 f31d Recovering log #7
+2023/10/19-21:55:49.991 f31d Reusing old log /tmp/flutter_tools.GSJDTF/flutter_tools_chrome_device.UMTOAC/Default/shared_proto_db/000007.log 
+2023/10/19-21:55:49.991 f31d Delete type=2 #8
+2023/10/19-21:55:49.991 f31d Delete type=0 #3
+2023/10/19-21:55:49.991 f31d Delete type=2 #5
+2023/10/19-21:55:49.991 f31d Delete type=0 #4
+2023/10/19-21:56:08.247 f32a Level-0 table #10: started
+2023/10/19-21:56:08.257 f32a Level-0 table #10: 125253 bytes OK
+2023/10/19-21:56:08.263 f32a Delete type=0 #7
