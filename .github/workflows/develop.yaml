@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install Flutter
-  
-      uses: britannio/action-install-flutter@v1.1
+      uses: steebchen/flutter@v1.1.0
+      #uses: britannio/action-install-flutter@v1.1
       with:
     # The channel/version of Flutter to be used e.g., beta or 2.0.0
         version: stable
@@ -19,7 +19,7 @@ jobs:
         file: pubspec.yaml
     - name: Build
       
-      run: flutter run -v && flutter build web
+      run: flutter build web
 
             
       
