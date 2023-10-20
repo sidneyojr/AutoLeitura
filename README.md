@@ -24,7 +24,11 @@ A Flutter project.
 
 Este projeto é um ponto de partida para uma aplicação Flutter.
 
-Antes do app mobile você pode acompanhar a evolução do projeto clicando no link [AutoLeitura](https://auto-leitura.vercel.app/)
+Antes do app mobile você pode acompanhar a evolução do projeto clicando nos links. 
+
+[AutoLeitura Produção](https://auto-leitura.vercel.app/)
+
+[AutoLeitura Desenvolvimento](https://auto-leitura-git-develop-sidneyo-ifspedubr.vercel.app/)
 
 A imagem original pode ser acessada em *[Imagem Original](https://encurtador.com.br/hiwZ3)*
 
