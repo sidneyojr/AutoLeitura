@@ -1,4 +1,7 @@
+![Logo Água na Torneira](/home/sidney/Imagens/agua-da-torneira-isolada-no-fundo-branco/9wd1_qx8l_230202_v2.png) 
+
 # AutoLeitura
+
 
 Na Várzea, 11 moradores dependem de um poço artesiano para obter água. Atualmente, a medição do consumo em metros cúbicos ocorre anualmente, mas a partir de fevereiro de 2024, a leitura será realizada mensalmente. O cálculo do valor por metro cúbico é baseado na divisão do custo da conta de energia elétrica (CPFL) pela soma total do consumo de todos os residentes. Esse rateio é proporcional ao consumo individual.
 
