@@ -15,11 +15,11 @@ jobs:
       with:
     # The channel/version of Flutter to be used e.g., beta or 2.0.0
         version: stable
-        context: .
+        context: ./autoleitura
         file: pubspec.yaml
     - name: Build
       
-      run: flutter run
+      run: flutter run -v
 
             
       
