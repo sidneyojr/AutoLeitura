@@ -1,5 +1,4 @@
 import 'package:autoleitura/login.dart';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -11,6 +10,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('AUTO LEITURA'),
+        backgroundColor: Colors.blue, // Manter a app bar no azul
       ),
       body: Center(
         child: Column(
@@ -18,27 +18,29 @@ class Home extends StatelessWidget {
           children: [
             Text("Seja Bem-Vindo ao sistema de Auto Leitura"),
             SizedBox(height: 25),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Login()));
+            Material(
+              color: Colors.blueAccent, // Azul mais claro
+              borderRadius: BorderRadius.circular(20.0),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(20.0),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Login()),
+                  );
                 },
-                child: const Text('Próxima Página')),
-            // Container(
-            //   color: Colors.lightBlueAccent,
-            //   width: 300,
-            //   height: 200,
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            //   width: 300,
-            //   height: 200,
-            // ),
-            // Container(
-            //   color: Colors.blueGrey,
-            //   width: 300,
-            //   height: 200,
-            // ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Text(
+                    "Clique para inserir seu código",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

@@ -19,14 +19,21 @@ collection
 file:///home/sidney/.pub-cache/hosted/pub.dev/collection-1.17.2/
 file:///home/sidney/.pub-cache/hosted/pub.dev/collection-1.17.2/lib/
 cupertino_icons
+<<<<<<< HEAD
 2.19
 file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6/
 file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6/lib/
+=======
+2.12
+file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5/
+file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5/lib/
+>>>>>>> feature-dart
 fake_async
 2.12
 file:///home/sidney/.pub-cache/hosted/pub.dev/fake_async-1.3.1/
 file:///home/sidney/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib/
 flutter_lints
+<<<<<<< HEAD
 2.19
 file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3/
 file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3/lib/
@@ -34,6 +41,15 @@ lints
 3.0
 file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.1.1/
 file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.1.1/lib/
+=======
+2.18
+file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.2/
+file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.2/lib/
+lints
+2.17
+file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.0.1/
+file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.0.1/lib/
+>>>>>>> feature-dart
 matcher
 2.18
 file:///home/sidney/.pub-cache/hosted/pub.dev/matcher-0.12.16/
@@ -95,7 +111,11 @@ flutter_test
 file:///home/sidney/Development/flutter/packages/flutter_test/
 file:///home/sidney/Development/flutter/packages/flutter_test/lib/
 autoleitura
+<<<<<<< HEAD
 3.1
+=======
+2.18
+>>>>>>> feature-dart
 file:///home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/AutoLeitura/
 file:///home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/AutoLeitura/lib/
 2

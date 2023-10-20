@@ -1,50 +1,85 @@
-// home
-import 'package:autoleitura/conta.dart';
 import 'package:flutter/material.dart';
-//import 'package:autoleitura/main.dart';
+import 'package:autoleitura/leitura.dart';
 
 class Login extends StatelessWidget {
-  final cpfController = TextEditingController();
-  final monthController = TextEditingController();
+  final codigoUsuarioController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('LOGIN / Informe o CPF e o Mês'),
-        centerTitle: true, //centralizar o titulo do appbar
+        title: Text('Auto Leitura'),
+        centerTitle: true,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(100),
-        child: Column(
-          children: [
-            TextField(
-              controller: cpfController,
-              decoration: InputDecoration(labelText: 'CPF'),
-            ),
-            TextField(
-              controller: monthController,
-              decoration: InputDecoration(labelText: 'Mês'),
-            ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
+      body: Center(
+        child: Container(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'Coloque seu código aqui',
+                style: TextStyle(fontSize: 16),
+              ),
+              SizedBox(height: 10),
+              TextFormField(
+                controller: codigoUsuarioController,
+                decoration: InputDecoration(
+                  labelText: 'Código Único de Usuário',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              SizedBox(height: 20.0),
+              ElevatedButton(
+                onPressed: () {
+                  _mostrarDialog(context, codigoUsuarioController.text);
+                },
+                child: Text('Enviar para Validação'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _mostrarDialog(BuildContext context, String codigo) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Confira seu código'),
+          content: Text(
+              'Seu código é: $codigo\nConfira se seu código é este mesmo.'),
+          actions: [
+            TextButton(
               onPressed: () {
-                // Aqui você pode direcionar para a tela de exibição da conta
-                // Se formos apresentar, seria bom apagar essa parte do codigo
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Conta(
-                      cpf: cpfController.text,
-                      month: monthController.text,
-                    ),
-                  ),
-                );
+                _navegarParaLeitura(context);
               },
-              child: Text('Visualizar Conta'),
+              child: Text('Validar'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Corrigir'),
             ),
           ],
-        ),
+        );
+      },
+    );
+  }
+
+  void _navegarParaLeitura(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) {
+          return Leitura(
+            codigo: '',
+            //month:                '', // O CPF pode ser obtido do código, ou você pode definir como uma string vazia
+          );
+        },
       ),
     );
   }

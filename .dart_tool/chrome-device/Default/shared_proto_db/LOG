@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 2023/10/12-02:02:50.876 84d6 Reusing MANIFEST /tmp/flutter_tools.BCEXAI/flutter_tools_chrome_device.TGAMIB/Default/shared_proto_db/MANIFEST-000001
 2023/10/12-02:02:50.876 84d6 Recovering log #3
 2023/10/12-02:02:50.876 84d6 Reusing old log /tmp/flutter_tools.BCEXAI/flutter_tools_chrome_device.TGAMIB/Default/shared_proto_db/000003.log 
+=======
+2023/10/19-21:05:03.731 c45f Reusing MANIFEST /tmp/flutter_tools.UJCUJO/flutter_tools_chrome_device.XQIADX/Default/shared_proto_db/MANIFEST-000001
+2023/10/19-21:05:03.732 c45f Recovering log #7
+2023/10/19-21:05:03.732 c45f Reusing old log /tmp/flutter_tools.UJCUJO/flutter_tools_chrome_device.XQIADX/Default/shared_proto_db/000007.log 
+2023/10/19-21:05:03.732 c45f Delete type=0 #3
+2023/10/19-21:05:03.732 c45f Delete type=0 #4
+>>>>>>> feature-dart
