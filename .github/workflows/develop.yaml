@@ -17,5 +17,4 @@ jobs:
         version: 3.13.0
         context: .
         file: pubspec.yaml  
-    - name: Build      
-      run: flutter build web    
+      
