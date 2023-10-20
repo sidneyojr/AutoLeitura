@@ -1,0 +1,19 @@
+name: AppFlutter
+
+on:
+  push:
+    branches: ["develop"]
+  workflow_dispatch:
+    
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install Flutter
+  
+      uses: britannio/action-install-flutter@v1.1
+      with:
+    # The channel/version of Flutter to be used e.g., beta or 2.0.0
+        version: stable
+    - name: Build
+      run: flutter build web    
