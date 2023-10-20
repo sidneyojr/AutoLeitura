@@ -10,10 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install Flutter
-      uses: steebchen/flutter@v1.1.0
-      #uses: britannio/action-install-flutter@v1.1
-      run: flutter build web
-            
+      #uses: steebchen/flutter@v1.1.0
+      uses: britannio/action-install-flutter@v1.1
       
      
       
