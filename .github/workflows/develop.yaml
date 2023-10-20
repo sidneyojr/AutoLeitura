@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: AppFlutter
 
 on:
@@ -24,3 +25,32 @@ jobs:
         run: flutter build web
      
       
+=======
+name: AppFlutter
+
+on:
+  push:
+    branches: ["develop"]
+  workflow_dispatch:
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v1
+      with:
+        channel: "stable"
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Build Web
+      run: flutter build web
+
+
+
+>>>>>>> ec9834d (Adicionado Notificação atrve telegram)
