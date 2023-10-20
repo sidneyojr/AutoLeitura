@@ -19,7 +19,7 @@ jobs:
         file: pubspec.yaml
     - name: Build
       
-      run: flutter build web    
+      run: flutter run && flutter build web
 
             
       
