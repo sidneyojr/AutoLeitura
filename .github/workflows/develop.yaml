@@ -12,11 +12,7 @@ jobs:
     - name: Install Flutter
       uses: steebchen/flutter@v1.1.0
       #uses: britannio/action-install-flutter@v1.1
-   
-    - name: Build
-      
       run: flutter build web
-
             
       
      
