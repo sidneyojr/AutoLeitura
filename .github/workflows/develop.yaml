@@ -9,10 +9,15 @@ jobs:
   Teste:
     runs-on: ubuntu-latest
     steps:
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
     - name: Teste com SonarQube
       run: echo "Aqui irá as intruções do teste do código"
 
   Build:
+    needs: Teste
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -41,5 +46,9 @@ jobs:
     needs: Build
     runs-on: ubuntu-latest
     steps:
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
     - name: Instalar SendEmail
-      run: "\"echo \"Instalado o sendemail para enviar o .apk para testadores\"     \nsudo apt install sendemail\n"
+      run: sudo apt install sendemail

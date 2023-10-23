@@ -16,7 +16,7 @@ Ao copiar o PIX, a operação será finalizada, e uma mensagem de agradecimento 
 A Flutter project.
 
 ### Paulo Antunes da Silva Junior
-### Sidney de Oliveira da Silva Junior
+### Sidney de Oliveira Junior
 
 
 
