@@ -40,9 +40,9 @@ jobs:
     - name: Notification
       if: ${{ success() }}
       run: bash notificationSucess.sh
-      with:
-        context: ./autoleitura/.scripts
-        file: .scripts/notificationSucess.sh
+      #with:
+      # context: ./autoleitura/.scripts
+      #file: .scripts/notificationSucess.sh
 
   Deploy:
     needs: Build
