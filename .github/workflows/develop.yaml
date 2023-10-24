@@ -31,13 +31,17 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
 
-    - name: Build_Web
+    - name: Build Web
       id: build_web
       run: flutter build web
       continue-on-error: true
 
-    - name: Build_Android
-      run: echo "Aqui vão as instrução do .apk depois dos testes"
+    - name: Build Android
+      id: build_android
+      run: |
+        flutter build apk
+        mv build/app/outputs/flutter-apk/app-release.apk ${{ github.workspace }}/app-release.apk
+      continue-on-error: true
 
   Notification:
     needs: build
@@ -48,11 +52,11 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Notify Success
-      if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' || needs.build.outputs.build_web == 'success'
+      if: success() && needs.build.result == 'success' && needs.build.outputs.build_android == 'success' || needs.build.outputs.build_web == 'success'
       run: sh ./.scripts/notificationSuccess.sh
 
     - name: Notify Failure
-      if: failure() && (needs.build.result == 'failure' || needs.build.outputs.Build_Android == 'failure' || needs.build.outputs.build_web == 'failure')
+      if: failure() && (needs.build.result == 'failure' || needs.build.outputs.build_android == 'failure' || needs.build.outputs.build_web == 'failure')
       run: sh ./.scripts/notificationFailure.sh
 
   Deploy:
@@ -63,10 +67,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Instalar SendEmail
+    - name: Setup SendEmail
       run: sudo apt install sendemail openssl perl libio-socket-inet6-perl libio-socket-ssl-perl libnet-ssleay-perl
 
-    - name: Enviar Email com .apk
+    - name: Send Email add .apk
       run: sh ./.scripts/sendMail.sh
 
 
