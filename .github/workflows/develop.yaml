@@ -37,12 +37,32 @@ jobs:
     - name: Build Android
       run: echo "Aqui vão as instrução do .apk depois dos testes"
 
-    - name: Notification
-      if: ${{ success() }}
-      run: bash notificationSucess.sh
-      #with:
-      # context: ./autoleitura/.scripts
-      #file: .scripts/notificationSucess.sh
+  Notification:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Successo
+      uses: workflow/nix-shell-action@v3.3.0
+      with:
+        interpreter: bash
+        context: ./autoleitura/.scripts
+        file: .scripts/notificationSuccess.sh
+        if: ${{ success() }}
+        run: notificationSucess.sh
+
+    - name: Falha
+      uses: workflow/nix-shell-action@v3.3.0
+      with:
+        interpreter: bash
+        context: ./autoleitura/.scripts
+        file: .scripts/notificationFailure.sh
+        if: ${{ failure() }}
+        run: notificationFailure.sh
+
+
 
   Deploy:
     needs: Build
