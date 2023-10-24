@@ -32,7 +32,9 @@ jobs:
       run: flutter pub get
 
     - name: Build_Web
+      id: build_web
       run: flutter build web
+      continue-on-error: true
 
     - name: Build_Android
       run: echo "Aqui vão as instrução do .apk depois dos testes"
@@ -46,15 +48,11 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Notify Success
-
-      with:
-        context: ./autoleitura/.scripts
-        file: .scripts/notificationSuccess.sh
-      if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' && needs.build.outputs.Build_Web == 'success'
+      if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' && needs.build.outputs.build_web == 'success'
       run: ./autoleitura/.scripts/notificationSuccess.sh
 
     - name: Notify Failure
-      if: failure() && (needs.build.result == 'failure' || needs.build.outputs.Build_Android == 'failure' || needs.build.outputs.Build_Web == 'failure')
+      if: failure() && (needs.build.result == 'failure' || needs.build.outputs.Build_Android == 'failure' || needs.build.outputs.build_web == 'failure')
       run: ./autoleitura/.scripts/notificationFailure.sh
 
   Deploy:
