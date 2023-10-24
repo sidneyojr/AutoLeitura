@@ -65,7 +65,7 @@ jobs:
 
 
   Deploy:
-    needs: Build
+    needs: Notification
     runs-on: ubuntu-latest
     steps:
 
