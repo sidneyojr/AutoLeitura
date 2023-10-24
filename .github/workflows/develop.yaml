@@ -41,7 +41,7 @@ jobs:
       with:
         context: ./autoleitura/.scripts
         file: .scripts/notificationSucess.sh
-      if: ${{ sucess() }}
+      if: ${{ success() }}
       run: notificationSucess.sh
 
   Deploy:
