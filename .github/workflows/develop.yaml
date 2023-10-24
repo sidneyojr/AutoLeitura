@@ -67,7 +67,7 @@ jobs:
       run: sudo apt install sendemail
 
     - name: Enviar Email com .apk
-      run: sh ./autoleitura/.scripts/sendMail.sh
+      run: sh ./.scripts/sendMail.sh
 
 
 
