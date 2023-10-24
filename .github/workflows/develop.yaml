@@ -48,7 +48,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Notify Success
-      if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' && needs.build.outputs.build_web == 'success'
+      if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' || needs.build.outputs.build_web == 'success'
       run: sh ./.scripts/notificationSuccess.sh
 
     - name: Notify Failure
