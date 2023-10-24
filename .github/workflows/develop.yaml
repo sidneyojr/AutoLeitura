@@ -64,7 +64,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Instalar SendEmail
-      run: sudo apt install sendemail openssl
+      run: sudo apt install sendemail openssl perl libio-socket-inet6-perl \ libio-socket-ssl-perl libnet-ssleay-perl
 
     - name: Enviar Email com .apk
       run: sh ./.scripts/sendMail.sh
