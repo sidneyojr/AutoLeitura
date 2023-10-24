@@ -38,11 +38,11 @@ jobs:
       run: echo "Aqui vão as instrução do .apk depois dos testes"
 
     - name: Notification
+      if: ${{ success() }}
+      run: bash notificationSucess.sh
       with:
         context: ./autoleitura/.scripts
         file: .scripts/notificationSucess.sh
-      if: ${{ success() }}
-      run: bash notificationSucess.sh
 
   Deploy:
     needs: Build
