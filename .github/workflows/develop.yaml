@@ -42,7 +42,7 @@ jobs:
         context: ./autoleitura/.scripts
         file: .scripts/notificationSucess.sh
       if: ${{ success() }}
-      run: notificationSucess.sh
+      run: bash notificationSucess.sh
 
   Deploy:
     needs: Build
