@@ -49,11 +49,11 @@ jobs:
 
     - name: Notify Success
       if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' && needs.build.outputs.build_web == 'success'
-      run: ./autoleitura/.scripts/notificationSuccess.sh
+      run: sh ./autoleitura/.scripts/notificationSuccess.sh
 
     - name: Notify Failure
       if: failure() && (needs.build.result == 'failure' || needs.build.outputs.Build_Android == 'failure' || needs.build.outputs.build_web == 'failure')
-      run: ./autoleitura/.scripts/notificationFailure.sh
+      run: sh ./autoleitura/.scripts/notificationFailure.sh
 
   Deploy:
     needs: Notification
