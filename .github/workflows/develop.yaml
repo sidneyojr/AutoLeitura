@@ -38,31 +38,20 @@ jobs:
       run: echo "Aqui vão as instrução do .apk depois dos testes"
 
   Notification:
-    needs: Build
+    needs: build
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
-    - name: Successo
-      uses: workflow/nix-shell-action@v3.3.0
-      with:
-        interpreter: bash
-        context: ./autoleitura/.scripts
-        file: .scripts/notificationSuccess.sh
-        if: ${{ success() && steps.Build_Android && Build_Web.conclusion == 'success' }}
-        run: notificationSucess.sh
+    - name: Notify Success
+      if: success() && needs.build.result == 'success' && needs.build.outputs.Build_Android == 'success' && needs.build.outputs.Build_Web == 'success'
+      run: ./autoleitura/.scripts/notificationSuccess.sh
 
-    - name: Falha
-      uses: workflow/nix-shell-action@v3.3.0
-      with:
-        interpreter: bash
-        context: ./autoleitura/.scripts
-        file: .scripts/notificationFailure.sh
-        if: ${{ failure() && steps.Build_Android && Build_Web.conclusion == 'failure' }}
-        run: notificationFailure.sh
-
-
+    - name: Notify Failure
+      if: failure() && (needs.build.result == 'failure' || needs.build.outputs.Build_Android == 'failure' || needs.build.outputs.Build_Web == 'failure')
+      run: ./autoleitura/.scripts/notificationFailure.sh
 
   Deploy:
     needs: Notification
