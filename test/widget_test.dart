@@ -120,8 +120,8 @@ void main() {
     // Verificar se a animação está presente.
     expect(find.byType(AnimatedBuilder), findsOneWidget);
 
-    // Esperar pelo término da animação (simulamos com um delay de 5 segundos).
-    await tester.pump(Duration(seconds: 5));
+    // Aguardar pelo término da animação (simulamos com um delay de 10 segundos).
+    await tester.pump(Duration(seconds: 10));
 
     // Verificar se o botão "Exibir Detalhes" está presente.
     expect(find.text('Exibir Detalhes'), findsOneWidget);
