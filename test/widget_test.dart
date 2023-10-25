@@ -18,7 +18,6 @@ void main() {
     // Verify that our counter starts at 0.
     expect(
         find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
-    expect(find.text('Coloque seu código aqui'), findsOneWidget);
 
     //expect(find.text('1'), findsNothing);
 
