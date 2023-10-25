@@ -1,45 +1,32 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:autoleitura/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:autoleitura/main.dart';
-//import 'package:autoleitura/login.dart';
+import 'package:autoleitura/home.dart';
+import 'package:autoleitura/login.dart';
 
 void main() {
-  testWidgets('Auto Leitura', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  testWidgets('Clique no botão para ir para a tela de login',
+      (WidgetTester tester) async {
+    // Construir nossa tela Home e acionar um frame.
+    await tester.pumpWidget(MaterialApp(home: Home()));
 
-    // Verify that our counter starts at 0.
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o texto de boas-vindas está presente.
     expect(
         find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
 
-    // Tap the "Clique aqui para inserir seu código" button.
-    // Find the button by its key or text.
-    final buttonFinder =
-        find.widgetWithText(ElevatedButton, 'Clique para inserir seu código');
+    // Localizar o botão pelo texto.
+    final buttonFinder = find.text('Clique para inserir seu código');
     expect(buttonFinder, findsOneWidget);
 
-    // Tap the button to trigger the action.
+    // Tocar no botão.
     await tester.tap(buttonFinder);
 
-    // Wait for the widget tree to settle.
+    // Aguardar a árvore de widgets se estabilizar.
     await tester.pumpAndSettle();
 
-    // Verify that we are on the login screen.
+    // Verificar se a tela de login está presente.
     expect(find.byType(Login), findsOneWidget);
-    // Tap the '+' icon and trigger a frame.
-    //await tester.tap(find.byIcon(Icons.add));
-    //await tester.pump();
-
-    // Verify that our counter has incremented.
-    //expect(find.text('0'), findsNothing);
-    //expect(find.text('1'), findsOneWidget);
   });
 }
