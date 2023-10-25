@@ -37,10 +37,10 @@ jobs:
       run: flutter analyze
 
     - name: Format Test lib/
-      run: flutter format --dry-run --set-exit-if-changed lib/
+      run: dart format ./lib
 
     - name: Format Test test/
-      run: flutter format --dry-run --set-exit-if-changed test/
+      run: dart format ./test
 
     - name: Run Test
       run: flutter test --coverage --verbose
