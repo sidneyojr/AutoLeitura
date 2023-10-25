@@ -6,6 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 //import 'package:flutter/material.dart';
+import 'package:autoleitura/login.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:autoleitura/main.dart';
 //import 'package:autoleitura/login.dart';
@@ -18,6 +19,12 @@ void main() {
     // Verify that our counter starts at 0.
     expect(
         find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
+
+    await tester.tap(find.text('Clique aqui para inserir seu código'));
+    await tester.pumpAndSettle(); // Wait for animations to complete.
+
+    // Verify that we are on the login screen.
+    expect(find.byType(Login), findsOneWidget);
 
     //expect(find.text('1'), findsNothing);
 
