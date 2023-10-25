@@ -105,6 +105,45 @@ void main() {
     // Verificar se a tela de Conta está presente.
     expect(find.byType(Conta), findsOneWidget);
   });
+
+  testWidgets('Teste de Conta', (WidgetTester tester) async {
+    // Construir nossa tela Conta e acionar um frame.
+    await tester
+        .pumpWidget(MaterialApp(home: Conta(codigo: '1234', leitura: 150.0)));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o texto está presente.
+    expect(find.text('Calculando conta'), findsOneWidget);
+
+    // Verificar se a animação está presente.
+    expect(find.byType(AnimatedBuilder), findsOneWidget);
+
+    // Esperar pelo término da animação (simulamos com um delay de 5 segundos).
+    await tester.pump(Duration(seconds: 5));
+
+    // Verificar se o botão "Exibir Detalhes" está presente.
+    expect(find.text('Exibir Detalhes'), findsOneWidget);
+
+    // Tocar no botão "Exibir Detalhes".
+    await tester.tap(find.text('Exibir Detalhes'));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o diálogo de detalhes está presente.
+    expect(find.text('Detalhes da Conta'), findsOneWidget);
+
+    // Tocar no botão "Cancelar" no diálogo de detalhes.
+    await tester.tap(find.text('Cancelar'));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o diálogo foi fechado.
+    expect(find.text('Detalhes da Conta'), findsNothing);
+  });
 }
 
 String _obterNomeMes(int numeroMes) {
