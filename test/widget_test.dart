@@ -121,22 +121,28 @@ void main() {
     final animatedBuilder =
         tester.widgetList(find.byType(AnimatedBuilder)).first;
 
-    // Acessar o listenable (ValueNotifier) dentro do AnimatedBuilder.
-    final listenable =
-        (animatedBuilder as AnimatedBuilder).listenable as ValueNotifier<bool>;
+    // Acessar o listenable dentro do AnimatedBuilder.
+    final listenable = (animatedBuilder as AnimatedBuilder).listenable;
 
-    // Criar um Completer para aguardar a conclusão da animação.
-    final completer = Completer<void>();
+    // Verificar se o listenable é do tipo ValueNotifier<bool>.
+    if (listenable is ValueNotifier<bool>) {
+      // Criar um Completer para aguardar a conclusão da animação.
+      final completer = Completer<void>();
 
-    // Adicionar um ouvinte ao ValueNotifier para completar o Completer quando a animação terminar.
-    listenable.addListener(() {
-      if (listenable.value == true) {
-        completer.complete();
-      }
-    });
+      // Adicionar um ouvinte ao ValueNotifier para completar o Completer quando a animação terminar.
+      listenable.addListener(() {
+        if (listenable.value == true) {
+          completer.complete();
+        }
+      });
 
-    // Aguardar até que a animação esteja concluída.
-    await completer.future;
+      // Aguardar até que a animação esteja concluída.
+      await completer.future;
+    } else {
+      // Se o listenable não for do tipo esperado, você pode tratar isso de acordo com sua lógica.
+      // Por exemplo, lançar uma exceção ou imprimir uma mensagem de erro.
+      print('Erro: O listenable não é do tipo ValueNotifier<bool>.');
+    }
 
     // Verificar se o botão "Exibir Detalhes" está presente.
     expect(find.text('Exibir Detalhes'), findsOneWidget);
