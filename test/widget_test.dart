@@ -22,8 +22,8 @@ void main() {
 
     // Tap the "Clique aqui para inserir seu código" button.
     // Find the button by its key or text.
-    final buttonFinder = find.widgetWithText(
-        ElevatedButton, 'Clique aqui para inserir seu código');
+    final buttonFinder =
+        find.widgetWithText(ElevatedButton, 'Clique para inserir seu código');
     expect(buttonFinder, findsOneWidget);
 
     // Tap the button to trigger the action.
