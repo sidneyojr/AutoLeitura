@@ -54,7 +54,7 @@ class Login extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () {
-                _navegarParaLeitura(context);
+                _navegarParaLeitura(context, codigo);
               },
               child: Text('Validar'),
             ),
@@ -70,14 +70,17 @@ class Login extends StatelessWidget {
     );
   }
 
-  void _navegarParaLeitura(BuildContext context) {
+  void _navegarParaLeitura(BuildContext context, String codigo) {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) {
           return Leitura(
-            codigo: '',
-            //month:                '', // O CPF pode ser obtido do código, ou você pode definir como uma string vazia
+            codigo: codigo,
+            leituraAtual: 0.0, // Coloque os valores desejados
+            leituraAnterior: 0.0, // Coloque os valores desejados
+            valorCalculado: 0.0, // Coloque os valores desejados
+            leitura: 0.0, // Coloque os valores desejados
           );
         },
       ),

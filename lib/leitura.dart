@@ -4,7 +4,12 @@ import 'package:autoleitura/conta.dart';
 class Leitura extends StatefulWidget {
   final String codigo;
 
-  Leitura({required this.codigo});
+  Leitura(
+      {required this.codigo,
+      required double leituraAtual,
+      required double leituraAnterior,
+      required double valorCalculado,
+      required double leitura});
 
   @override
   _LeituraState createState() => _LeituraState();
