@@ -68,6 +68,9 @@ void main() {
   });
 
   testWidgets('Teste de Leitura', (WidgetTester tester) async {
+    // Obtém o nome do mês atual
+    final nomeMesAtual = _obterNomeMes(DateTime.now().month);
+
     // Construir nossa tela Leitura e acionar um frame.
     await tester.pumpWidget(MaterialApp(home: Leitura(codigo: '1234')));
 
@@ -75,8 +78,8 @@ void main() {
     await tester.pumpAndSettle();
 
     // Verificar se o texto de boas-vindas está presente.
-    expect(
-        find.text('Coloque aqui a leitura do mês de Janeiro'), findsOneWidget);
+    expect(find.text('Coloque aqui a leitura do mês de $nomeMesAtual'),
+        findsOneWidget);
 
     // Preencher o campo de leitura.
     await tester.enterText(find.byType(TextField), '100');
@@ -102,4 +105,22 @@ void main() {
     // Verificar se a tela de Conta está presente.
     expect(find.byType(Conta), findsOneWidget);
   });
+}
+
+String _obterNomeMes(int numeroMes) {
+  const nomesMes = [
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro'
+  ];
+  return nomesMes[numeroMes - 1];
 }
