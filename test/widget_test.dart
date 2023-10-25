@@ -1,7 +1,8 @@
+import 'package:autoleitura/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:autoleitura/home.dart';
 import 'package:autoleitura/login.dart';
+import 'package:autoleitura/leitura.dart';
 
 void main() {
   testWidgets('Clique no botão para ir para a tela de login',
@@ -28,5 +29,40 @@ void main() {
 
     // Verificar se a tela de login está presente.
     expect(find.byType(Login), findsOneWidget);
+  });
+
+  testWidgets('Teste de Login', (WidgetTester tester) async {
+    // Construir nossa tela Login e acionar um frame.
+    await tester.pumpWidget(MaterialApp(home: Login()));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o texto de boas-vindas está presente.
+    expect(find.text('Coloque seu código aqui'), findsOneWidget);
+
+    // Preencher o campo de código com '1234'.
+    await tester.enterText(find.byType(TextFormField), '1234');
+
+    // Verificar se o botão está presente.
+    expect(find.text('Enviar para Validação'), findsOneWidget);
+
+    // Tocar no botão.
+    await tester.tap(find.text('Enviar para Validação'));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o diálogo está presente.
+    expect(find.text('Confira seu código'), findsOneWidget);
+
+    // Tocar no botão 'Validar' no diálogo.
+    await tester.tap(find.text('Validar'));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se a tela de leitura está presente.
+    expect(find.byType(Leitura), findsOneWidget);
   });
 }
