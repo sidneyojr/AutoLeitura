@@ -1,3 +1,4 @@
+import 'package:autoleitura/conta.dart';
 import 'package:autoleitura/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -64,5 +65,41 @@ void main() {
 
     // Verificar se a tela de leitura está presente.
     expect(find.byType(Leitura), findsOneWidget);
+  });
+
+  testWidgets('Teste de Leitura', (WidgetTester tester) async {
+    // Construir nossa tela Leitura e acionar um frame.
+    await tester.pumpWidget(MaterialApp(home: Leitura(codigo: '1234')));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o texto de boas-vindas está presente.
+    expect(
+        find.text('Coloque aqui a leitura do mês de Janeiro'), findsOneWidget);
+
+    // Preencher o campo de leitura.
+    await tester.enterText(find.byType(TextField), '100');
+
+    // Verificar se o botão está presente.
+    expect(find.text('Enviar Leitura'), findsOneWidget);
+
+    // Tocar no botão "Enviar Leitura".
+    await tester.tap(find.text('Enviar Leitura'));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se o diálogo está presente.
+    expect(find.text('Confirmação de Leitura'), findsOneWidget);
+
+    // Tocar no botão "Sim" no diálogo.
+    await tester.tap(find.text('Sim'));
+
+    // Aguardar a árvore de widgets se estabilizar.
+    await tester.pumpAndSettle();
+
+    // Verificar se a tela de Conta está presente.
+    expect(find.byType(Conta), findsOneWidget);
   });
 }
