@@ -117,11 +117,14 @@ void main() {
     // Verificar se o texto está presente.
     expect(find.text('Calculando conta'), findsOneWidget);
 
+    // Aguardar pelo início da animação.
+    await tester.pump(Duration.zero);
+
     // Verificar se a animação está presente.
     expect(find.byType(AnimatedBuilder), findsOneWidget);
 
     // Aguardar pelo término da animação (simulamos com um delay de 10 segundos).
-    await tester.pump(Duration(seconds: 10));
+    await tester.pumpAndSettle(Duration(seconds: 10));
 
     // Verificar se o botão "Exibir Detalhes" está presente.
     expect(find.text('Exibir Detalhes'), findsOneWidget);
