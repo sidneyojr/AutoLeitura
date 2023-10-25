@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:autoleitura/login.dart';
 import 'package:autoleitura/leitura.dart';
+import 'dart:async';
 
 void main() {
-  testWidgets('Clique no botão para ir para a tela de login',
-      (WidgetTester tester) async {
+  testWidgets('Teste Home', (WidgetTester tester) async {
     // Construir nossa tela Home e acionar um frame.
     await tester.pumpWidget(MaterialApp(home: Home()));
 
@@ -117,14 +117,26 @@ void main() {
     // Verificar se o texto está presente.
     expect(find.text('Calculando conta'), findsOneWidget);
 
-    // Aguardar pelo início da animação.
-    await tester.pump(Duration.zero);
+    // Encontrar a instância do AnimatedBuilder.
+    final animatedBuilder =
+        tester.widgetList(find.byType(AnimatedBuilder)).first;
 
-    // Verificar se a animação está presente.
-    expect(find.byType(AnimatedBuilder), findsOneWidget);
+    // Acessar o listenable (ValueNotifier) dentro do AnimatedBuilder.
+    final listenable =
+        (animatedBuilder as AnimatedBuilder).listenable as ValueNotifier<bool>;
 
-    // Aguardar pelo término da animação (simulamos com um delay de 10 segundos).
-    await tester.pumpAndSettle(Duration(seconds: 10));
+    // Criar um Completer para aguardar a conclusão da animação.
+    final completer = Completer<void>();
+
+    // Adicionar um ouvinte ao ValueNotifier para completar o Completer quando a animação terminar.
+    listenable.addListener(() {
+      if (listenable.value == true) {
+        completer.complete();
+      }
+    });
+
+    // Aguardar até que a animação esteja concluída.
+    await completer.future;
 
     // Verificar se o botão "Exibir Detalhes" está presente.
     expect(find.text('Exibir Detalhes'), findsOneWidget);
