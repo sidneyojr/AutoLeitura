@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('AUTO LEITURA'),
+        title: const Text('AUTO LEITURA - INÍCIO'),
         backgroundColor: Colors.blue, // Manter a app bar no azul
       ),
       body: Center(

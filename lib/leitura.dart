@@ -24,7 +24,7 @@ class _LeituraState extends State<Leitura> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AUTOLEITURA'),
+        title: Text('AUTO LEITURA - INSERIR A LEITURA DO MÊS'),
       ),
       body: Center(
         child: Container(
