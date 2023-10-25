@@ -20,8 +20,11 @@ void main() {
     expect(
         find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
 
+    // Tap the "Clique aqui para inserir seu código" button.
     await tester.tap(find.text('Clique aqui para inserir seu código'));
-    await tester.pumpAndSettle(); // Wait for animations to complete.
+
+    // Wait for the widget tree to settle.
+    await tester.pumpAndSettle();
 
     // Verify that we are on the login screen.
     expect(find.byType(Login), findsOneWidget);
