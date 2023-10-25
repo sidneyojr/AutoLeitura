@@ -8,6 +8,7 @@
 //import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:autoleitura/main.dart';
+//import 'package:autoleitura/login.dart';
 
 void main() {
   testWidgets('Auto Leitura', (WidgetTester tester) async {
@@ -15,9 +16,10 @@ void main() {
     await tester.pumpWidget(MyApp());
 
     // Verify that our counter starts at 0.
-    expect(find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
-    expect(find.text('Clique para inserir seu código'), findsOneWidget);
-    final Clique para inserir seu código = find.text();
+    expect(
+        find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
+    expect(find.text('Coloque seu código aqui'), findsOneWidget);
+
     //expect(find.text('1'), findsNothing);
 
     // Tap the '+' icon and trigger a frame.
