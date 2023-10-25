@@ -15,8 +15,9 @@ void main() {
     await tester.pumpWidget(MyApp());
 
     // Verify that our counter starts at 0.
-    expect(
-        find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
+    expect(find.text('Seja Bem-Vindo ao sistema de Auto Leitura'), findsOneWidget);
+    expect(find.text('Clique para inserir seu código'), findsOneWidget);
+    final Clique para inserir seu código = find.text();
     //expect(find.text('1'), findsNothing);
 
     // Tap the '+' icon and trigger a frame.
