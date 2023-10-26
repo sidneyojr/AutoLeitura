@@ -110,7 +110,8 @@ jobs:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
         release-file: app-release.apk
-    #- run: cd build/app/outputs/apk/release/
+    - run: ls -lha build/app/outputs/apk/release/
+    - run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
     - run: cp -au build/app/outputs/apk/release/* ./.deploy_homol
 
     - name: Send Email add .apk
