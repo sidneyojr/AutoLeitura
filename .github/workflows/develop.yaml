@@ -108,8 +108,13 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: APK-AUTOLEITURA
+        path: build/app/outputs/apk/release/app-release.apk
         release-file: app-release.apk
 
 
     - name: Send Email add .apk
+<<<<<<< HEAD
       run: sh ./.scripts/sendMail.sh -a /home/runner/work/AutoLeitura/AutoLeitura/APK-*
+=======
+      run: sh ./.scripts/sendMail.sh
+>>>>>>> 965a432 (Build12)
