@@ -56,7 +56,7 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   Build:
-    #needs: Teste
+    needs: Teste
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -93,7 +93,7 @@ jobs:
       continue-on-error: true
 
   Deploy:
-    #needs: Build
+    needs: Build
     runs-on: ubuntu-latest
     steps:
 
