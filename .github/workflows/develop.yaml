@@ -119,45 +119,4 @@ jobs:
       run: sh ./.scripts/sendMail.sh
 
 
-  Notification:
-    #needs: Deploy
-    runs-on: ubuntu-latest
-    steps:
 
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      with:
-
-        version: latest
-
-        connection_url: ${{secrets.MAIL_CONNECTION}}
-
-        server_address: ${{secrets.MAIL_SERVER_ADDRESS}}
-
-        server_port: ${{secrets.SERVER_PORT}}
-
-        secure: true
-
-        username: ${{secrets.MAIL_USERNAME}}
-
-        password: ${{secrets.MAIL_PASSWORD}}
-
-        subject: Nova versão AutoLeitura
-
-        to: sidneyoliveirajunior@gmail.com
-        # Required sender full name (address can be skipped):
-        from: ${{secrets.MAIL_USERNAME}}
-
-        #body: Build job of ${{github.repository}} completed successfully!
-        # Optional HTML body read from file:
-        html_body: ./.autoleitura.html
-
-
-
-        ignore_cert: true
-        # Optional converting Markdown to HTML (set content_type to text/html too):
-        convert_markdown: true
-        # Optional attachments:
-        #attachments: attachments.zip,git.diff,./dist/static/*.js
-
-        priority: low
