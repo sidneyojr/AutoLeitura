@@ -54,3 +54,47 @@ jobs:
       uses: codecov/codecov-action@v3
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+  Build:
+    needs: Teste
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: "12.x"
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v1
+      with:
+        channel: "stable"
+        flutter-version: "3.13.8"
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Build Web
+      id: build_web
+      run: flutter build web
+      continue-on-error: true
+
+    - name: Build Android
+      id: build_android
+      run: flutter build apk --release
+
+    - name: Create Github Release
+      uses: ncipollo/release-action@v1
+
+      with:
+        artifacts: build/app/outputs/apk/release/app-release.apk
+
+
+    - name: Save APK to Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: APK
+        path: build/app/outputs/apk/release/app-release.apk
+      continue-on-error: true
