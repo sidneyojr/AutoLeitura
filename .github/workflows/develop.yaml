@@ -114,4 +114,4 @@ jobs:
 
     - name: Send Email add .apk
 
-      run: "$ARTEFATO = \"APK-AUTOLEITURA\"\nsh ./.scripts/sendMail.sh \n"
+      run: sh ./.scripts/sendMail.sh
