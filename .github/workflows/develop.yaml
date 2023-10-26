@@ -112,4 +112,4 @@ jobs:
 
 
     - name: Send Email add .apk
-      run: sh ./.scripts/sendMail.sh -a APK-AUTOLEITURA
+      run: sh ./.scripts/sendMail.sh -a /home/runner/work/AutoLeitura/AutoLeitura/APK-*
