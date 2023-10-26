@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('AUTO LEITURA - LOGIN'),
+        backgroundColor: Color.fromARGB(255, 0, 5, 8),
         centerTitle: true,
       ),
       body: Center(

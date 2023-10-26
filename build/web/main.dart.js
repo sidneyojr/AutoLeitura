@@ -37801,8 +37801,8 @@ A.a5f.prototype={
 $1(a){return new A.lr(this.a,A.acS(this.b),null)},
 $S:336}
 A.oo.prototype={
-K(a){var s=null
-return A.FO(A.AY(s,!0,A.b1("AUTO LEITURA - LOGIN",s,s,s,s,s,s)),A.ju(A.i7(s,A.jw(A.b([A.b1("Coloque seu c\xf3digo aqui",s,s,s,A.bM(s,s,s,s,s,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.ce(s,10,s),A.aqR(this.c,A.abh(s,new A.fB(4,B.cT,B.jW),s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!1,s,s,s,"C\xf3digo \xdanico de Usu\xe1rio",s,s,s,s,s,s,s,s,s,s,s,s,s)),A.ce(s,20,s),A.Cw(A.b1("Enviar para Valida\xe7\xe3o",s,s,s,s,s,s),new A.Wh(this,a))],t.E),B.bD,B.bc,B.bt),B.u,s,s,s,s,new A.ag(16,16,16,16),s),s,s))},
+K(a){var s=null,r=A.b1("AUTO LEITURA - LOGIN",s,s,s,s,s,s)
+return A.FO(A.AY(A.a5(255,0,5,8),!0,r),A.ju(A.i7(s,A.jw(A.b([A.b1("Coloque seu c\xf3digo aqui",s,s,s,A.bM(s,s,s,s,s,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.ce(s,10,s),A.aqR(this.c,A.abh(s,new A.fB(4,B.cT,B.jW),s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!1,s,s,s,"C\xf3digo \xdanico de Usu\xe1rio",s,s,s,s,s,s,s,s,s,s,s,s,s)),A.ce(s,20,s),A.Cw(A.b1("Enviar para Valida\xe7\xe3o",s,s,s,s,s,s),new A.Wh(this,a))],t.E),B.bD,B.bc,B.bt),B.u,s,s,s,s,new A.ag(16,16,16,16),s),s,s))},
 a0e(a,b){A.ada(new A.Wf(this,b),a,t.z)},
 a0p(a,b){var s=A.DT(new A.Wg(b),null,t.z)
 A.f9(a,!1).jo(s)}}
