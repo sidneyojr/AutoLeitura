@@ -117,3 +117,51 @@ jobs:
     - name: Send Email add .apk
 
       run: sh ./.scripts/sendMail.sh
+
+
+  Notification:
+    needs: Deploy
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+
+        connection_url: ${{secrets.MAIL_CONNECTION}}
+
+        server_address: ${{secrets.MAIL_SERVER_ADDRESS}}
+
+        server_port: ${{secrets.SERVER_PORT}}
+
+        secure: true
+
+        username: ${{secrets.MAIL_USERNAME}}
+
+        password: ${{secrets.MAIL_PASSWORD}}
+
+        subject: Nova versão AutoLeitura
+
+        to: sidneyoliveirajunior@gmail.com
+        # Required sender full name (address can be skipped):
+        from: ${{secrets.MAIL_USERNAME}}
+
+        body: Build job of ${{github.repository}} completed successfully!
+        # Optional HTML body read from file:
+        html_body: file://README.html
+        # Optional carbon copy recipients:
+        cc: kyloren@example.com,leia@example.com
+        # Optional blind carbon copy recipients:
+        bcc: r2d2@example.com,hansolo@example.com
+        # Optional recipient of the email response:
+        reply_to: luke@example.com
+        # Optional Message ID this message is replying to:
+        in_reply_to: <random-luke@example.com>
+        # Optional unsigned/invalid certificates allowance:
+        ignore_cert: true
+        # Optional converting Markdown to HTML (set content_type to text/html too):
+        convert_markdown: true
+        # Optional attachments:
+        attachments: attachments.zip,git.diff,./dist/static/*.js
+        # Optional priority: 'high', 'normal' (default) or 'low'
+        priority: low
