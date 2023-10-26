@@ -17,6 +17,7 @@ class ExibirDetalhes extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('AUTOLEITURA - DETALHES'),
+        backgroundColor: Color.fromARGB(255, 0, 5, 8),
       ),
       body: Center(
         child: Container(

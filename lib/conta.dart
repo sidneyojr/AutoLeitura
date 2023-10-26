@@ -59,6 +59,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         title: Text('AUTOLEITURA - CONTA'),
+        backgroundColor: Color.fromARGB(255, 0, 5, 8),
       ),
       body: Center(
         child: Container(

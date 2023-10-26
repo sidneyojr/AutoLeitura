@@ -30,6 +30,7 @@ class _LeituraState extends State<Leitura> {
     return Scaffold(
       appBar: AppBar(
         title: Text('AUTO LEITURA - INSERIR A LEITURA DO MÊS'),
+        backgroundColor: Color.fromARGB(255, 0, 5, 8),
       ),
       body: Center(
         child: Container(
