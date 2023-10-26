@@ -89,7 +89,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: APK-AUTOLEITURA
-        path: build/app/outputs/apk/release/autoleitura.apk
+        path: build/app/outputs/apk/release/app-release.apk
       continue-on-error: true
 
   Deploy:
@@ -108,7 +108,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: APK-AUTOLEITURA
-        release-file: autoleitura.apk
+        release-file: app-release.apk
 
 
     - name: Send Email add .apk
