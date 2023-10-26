@@ -13,6 +13,7 @@ Ao copiar o PIX, a operação será finalizada, e uma mensagem de agradecimento 
 
 
 # autoleitura
+
 A Flutter project.
 
 ### Paulo Antunes da Silva Junior
