@@ -111,7 +111,7 @@ jobs:
         path: build/app/outputs/apk/release/app-release.apk
         release-file: app-release.apk
     - run: cd build/app/outputs/apk/release/
-    - run: cp app-release.apk .deploy_homol
+    - run: cp APK-AUTOLEITURA .deploy_homol
 
     - name: Send Email add .apk
 
