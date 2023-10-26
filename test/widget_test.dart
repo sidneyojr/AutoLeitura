@@ -72,22 +72,26 @@ void main() {
     final nomeMesAtual = _obterNomeMes(DateTime.now().month);
 
     // Construir nossa tela Leitura e acionar um frame.
-    var leitura;
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(
+      MaterialApp(
         home: Leitura(
-      codigo: '1234',
-      leituraAtual: leitura,
-      leitura: 100.0,
-      leituraAnterior: 10,
-      valorCalculado: 90.0,
-    )));
+          codigo: '1234',
+          leituraAtual: 100.0,
+          leituraAnterior: 10.0,
+          valorCalculado: 90.0,
+          leitura: 0,
+        ),
+      ),
+    );
 
     // Aguardar a árvore de widgets se estabilizar.
     await tester.pumpAndSettle();
 
     // Verificar se o texto de boas-vindas está presente.
-    expect(find.text('Coloque aqui a leitura do mês de $nomeMesAtual'),
-        findsOneWidget);
+    expect(
+      find.text('Coloque aqui a leitura do mês de $nomeMesAtual'),
+      findsOneWidget,
+    );
 
     // Preencher o campo de leitura.
     await tester.enterText(find.byType(TextField), '100');
@@ -113,8 +117,8 @@ void main() {
     // Não devemos encontrar a tela de Conta diretamente aqui, pois há uma transição para a tela de Conta.
     // Podemos verificar se a tela de Conta foi chamada após a tela de Leitura.
     // Uma maneira de fazer isso seria verificar se a rota corrente é a tela de Conta.
-    expect(find.byType(Conta), findsNothing);
-    expect(find.byType(Leitura), findsOneWidget);
+    expect(find.byType(Conta), findsOneWidget);
+    expect(find.byType(Leitura), findsNothing);
   });
 
   testWidgets('Teste de Conta', (WidgetTester tester) async {
