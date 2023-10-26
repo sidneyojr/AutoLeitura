@@ -58,7 +58,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AUTOLEITURA - Conta'),
+        title: Text('AUTOLEITURA - CONTA'),
       ),
       body: Center(
         child: Container(

@@ -16,7 +16,7 @@ class ExibirDetalhes extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AUTOLEITURA - Detalhes'),
+        title: Text('AUTO LEITURA - DETALHES DA CONTA'),
       ),
       body: Center(
         child: Container(

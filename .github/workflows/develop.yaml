@@ -1,0 +1,56 @@
+name: AppFlutter
+
+on:
+  push:
+    tags:
+    - "internal-v*.*.*"
+    branches: ["develop"]
+  workflow_dispatch:
+
+
+jobs:
+  Teste:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v1
+      with:
+        channel: "stable"
+        flutter-version: "3.13.8"
+
+    - name: Setup Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: '12.x'
+
+    - name: Setup Dart Dev Test
+      run: dart pub add --dev test
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Analyze
+      run: flutter analyze
+
+    - name: Format Test lib/
+      run: dart format ./lib
+
+    - name: Format Test test/
+      run: dart format ./test
+
+    - name: Run Test
+      run: flutter test --coverage --verbose
+
+    - name: Minimum Test Coverage Percentage
+      uses: VeryGoodOpenSource/very_good_coverage@v1.1.1
+      with:
+        min_coverage: 0
+
+    - name: Upload Coverage Reports to Codecov
+      uses: codecov/codecov-action@v3
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
