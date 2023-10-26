@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Auto Leitura'),
+        title: Text('AUTO LEITURA - LOGIN'),
         centerTitle: true,
       ),
       body: Center(
