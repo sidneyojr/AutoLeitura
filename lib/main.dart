@@ -3,10 +3,10 @@ import 'package:autoleitura/home.dart';
 
 // main
 void main() {
-  runApp(MyApp());
+  runApp(AutoLeitura());
 }
 
-class MyApp extends StatelessWidget {
+class AutoLeitura extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

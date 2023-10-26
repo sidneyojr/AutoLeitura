@@ -10,7 +10,8 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('AUTO LEITURA - INÍCIO'),
-        backgroundColor: Colors.blue, // Manter a app bar no azul
+        backgroundColor:
+            Color.fromARGB(255, 0, 5, 8), // Manter a app bar no azul
       ),
       body: Center(
         child: Column(
