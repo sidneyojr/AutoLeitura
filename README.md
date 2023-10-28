@@ -16,7 +16,7 @@ Ao copiar o PIX, a operação será finalizada, e uma mensagem de agradecimento 
 
 # autoleitura
 A Flutter project. 
-<a href="https://docs.flutter.dev/" target="_blank"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></a>
+<a href="https://docs.flutter.dev/" target="_blank"><img  align="center" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></a>
 
 ##
 
