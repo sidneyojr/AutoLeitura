@@ -2,6 +2,7 @@
 
 # AutoLeitura
 
+##
 
 Na Várzea, 11 moradores dependem de um poço artesiano para obter água. Atualmente, a medição do consumo em metros cúbicos ocorre anualmente, mas a partir de fevereiro de 2024, a leitura será realizada mensalmente. O cálculo do valor por metro cúbico é baseado na divisão do custo da conta de energia elétrica (CPFL) pela soma total do consumo de todos os residentes. Esse rateio é proporcional ao consumo individual.
 
@@ -11,14 +12,19 @@ Após a confirmação, o aplicativo apresentará uma tela com o valor total em r
 
 Ao copiar o PIX, a operação será finalizada, e uma mensagem de agradecimento encerrará a transação. Esse processo eficiente e simplificado proporciona aos moradores maior autonomia e praticidade no controle do consumo de água e no pagamento de suas contas.
 
+##
 
 # autoleitura
-A Flutter project.
+A Flutter project. 
+<a href="https://docs.flutter.dev/" target="_blank"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></a>
+
+##
 
 ### Paulo Antunes da Silva Junior
-### Sidney de Oliveira da Silva Junior
+### Sidney de Oliveira Junior
 
 
+##
 
 ## Getting Started
 
