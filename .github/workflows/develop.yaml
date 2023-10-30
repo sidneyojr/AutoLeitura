@@ -86,7 +86,7 @@ jobs:
       run: flutter build apk
 
     - name: Save APK to Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
@@ -110,23 +110,24 @@ jobs:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
         release-file: app-release.apk
+        filename: autoleitura.zip
 
-    - name: Archive APK Zip
+    #- name: Archive APK Zip
       # uses: TheDoctor0/zip-release@7fddfdd07cadb5b8c6c0dbcdcec17f8cd7784b80
-      uses: TheDoctor0/zip-release@0.7.5
-      with:
+      #uses: TheDoctor0/zip-release@0.7.5
+#      with:
     # Filename for archive
-        filename: autoleitura.zip       
+ #       filename: autoleitura.zip       
         
     #- name: Test Artifacts Download
       #run: ls -R
         
-    #- run: ls -lha build/app/outputs/apk/release/
-    #- run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
-    #- run: cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk ./.deploy_homol/
-    #- run: cd ./.deploy_homol
-    #- run: ls ./.deploy_homol
-    #- run: sh ./.scripts/sendMail.sh
+    - run: ls -lha build/app/outputs/apk/release/
+    - run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
+    - run: cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/autoleitura.zip ./.deploy_homol/
+    - run: cd ./.deploy_homol
+    - run: ls ./.deploy_homol
+    - run: sh ./.scripts/sendMail.sh
     #- name: Send Email add .apk
 
       
