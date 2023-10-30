@@ -105,17 +105,21 @@ jobs:
 
 
     - name: Get APK from Artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
         release-file: app-release.apk
-    - run: ls -lha build/app/outputs/apk/release/
-    - run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
-    - run: cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk ./.deploy_homol/
-    - run: cd ./.deploy_homol
-    - run: ls ./.deploy_homol
-    - run: sh ./.scripts/sendMail.sh
+        
+    - name: Test Artifacts Download
+    - run: ls -R
+        
+    #- run: ls -lha build/app/outputs/apk/release/
+    #- run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
+    #- run: cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk ./.deploy_homol/
+    #- run: cd ./.deploy_homol
+    #- run: ls ./.deploy_homol
+    #- run: sh ./.scripts/sendMail.sh
     #- name: Send Email add .apk
 
       
