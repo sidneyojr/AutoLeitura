@@ -117,8 +117,34 @@ jobs:
     - run: cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk ./.deploy_homol/
     - run: cd ./.deploy_homol
     - run: ls -lha ./.deploy_homol
-    - run: sh ./.scripts/sendMail.sh
+    #- run: sh ./.scripts/sendMail.sh
     #- name: Send Email add .apk
+
+    - name: Send mailer
+      uses: devellany/send-mail@v1.0.2
+      with:
+    # Enter SMTP host.
+        host: smtp.zoho.com
+    # Enter SMTP port. (defaults to 465)
+        port: 587 # optional, default is 465
+    # Enter SMTP host account.
+        account: ${{secrets.MAIL_USERNAME}}
+    # Enter SMTP host account password.
+        password: ${{secrets.MAIL_PASSWORD}}
+    # Enter sender name.
+        sender: Sidney
+    # Enter sender mail.
+        from: ${{secrets.MAIL_USERNAME}}
+    # Enter recipient emails and separated with 'comma'. (The prefix 'file://' if you want to read a file)
+        to: sidneyoliveirajunior@gmail.com
+    # Enter the subject of the mail. (The prefix 'file://' if you want to read a file)
+        subject: Nova versão Teste
+    # Enter the body of the mail. (The prefix 'file://' if you want to read a file)
+        body: file://./.deploy_homol/autoleitura.html
+    # Enter Content-Type HTTP header. (defaults to 'text/plain')
+        contentType: html # optional, default is text/plain
+    # Attachment files are entered as an array. Required key 'path'. (The prefix 'file://' if you want to read a file)
+       #attachments: # optional    
 
       
 
