@@ -118,33 +118,56 @@ jobs:
     - run: cd ./.deploy_homol
     - run: ls -lha ./.deploy_homol
     #- run: sh ./.scripts/sendMail.sh
-    #- name: Send Email add .apk
 
-    - name: Send mailer
-      uses: devellany/send-mail@v1.0.2
+    - run: sudo apt-get install openssl  
+      
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
       with:
-    # Enter SMTP host.
-        host: smtp.zoho.com
-    # Enter SMTP port. (defaults to 465)
-        port: 587 # optional, default is 465
-    # Enter SMTP host account.
-        account: ${{secrets.MAIL_USERNAME}}
-    # Enter SMTP host account password.
-        password: ${{secrets.MAIL_PASSWORD}}
-    # Enter sender name.
-        sender: Sidney
-    # Enter sender mail.
-        from: ${{secrets.MAIL_USERNAME}}
-    # Enter recipient emails and separated with 'comma'. (The prefix 'file://' if you want to read a file)
+    # Specify connection via URL (replaces server_address, server_port, secure,
+    # username and password)
+    #
+    # Format:
+    #
+    #  * smtp://user:password@server:port
+    #  * smtp+starttls://user:password@server:port
+        #connection_url: ${{secrets.MAIL_CONNECTION}}
+    # Required mail server address if not connection_url:
+        server_address: smtp.zoho.com
+    # Server port, default 25:
+        server_port: 587
+    # Optional whether this connection use TLS (default is true if server_port is 465)
+        secure: false
+    # Optional (recommended) mail server username:
+        username: sidney.oliveira.projeto@zohomail.com #${{secrets.MAIL_USERNAME}}
+    # Optional (recommended) mail server password:
+        password: 112PUwwnt8eM #${{secrets.MAIL_PASSWORD}}
+    # Required mail subject:
+        subject: Github Actions job result
+    # Required recipients' addresses:
         to: sidneyoliveirajunior@gmail.com
-    # Enter the subject of the mail. (The prefix 'file://' if you want to read a file)
-        subject: Nova versão Teste
-    # Enter the body of the mail. (The prefix 'file://' if you want to read a file)
-        body: file://./.deploy_homol/autoleitura.html
-    # Enter Content-Type HTTP header. (defaults to 'text/plain')
-        contentType: html # optional, default is text/plain
-    # Attachment files are entered as an array. Required key 'path'. (The prefix 'file://' if you want to read a file)
-       #attachments: # optional    
+    # Required sender full name (address can be skipped):
+        from: sidney.oliveira.projeto@zohomail.com # <user@example.com>
+    # Optional plain body:
+        body: Build job of ${{github.repository}} completed successfully!
+    # Optional HTML body read from file:
+        html_body: file://./README.html
+    # Optional carbon copy recipients:
+        #cc: kyloren@example.com,leia@example.com
+    # Optional blind carbon copy recipients:
+        #bcc: r2d2@example.com,hansolo@example.com
+    # Optional recipient of the email response:
+        #reply_to: luke@example.com
+    # Optional Message ID this message is replying to:
+        #in_reply_to: <random-luke@example.com>
+    # Optional unsigned/invalid certificates allowance:
+        ignore_cert: true
+    # Optional converting Markdown to HTML (set content_type to text/html too):
+        convert_markdown: true
+    # Optional attachments:
+        attachments: ./.deploy_homol/app-release.apk
+    # Optional priority: 'high', 'normal' (default) or 'low'
+        priority: low  
 
       
 
