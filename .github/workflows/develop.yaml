@@ -165,7 +165,7 @@ jobs:
     # Optional converting Markdown to HTML (set content_type to text/html too):
         convert_markdown: true
     # Optional attachments:
-        attachments: file://./.deploy_homol/app-release.apk
+        attachments: ./.deploy_homol/app-release.apk
     # Optional priority: 'high', 'normal' (default) or 'low'
         priority: low  
 
