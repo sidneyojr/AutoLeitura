@@ -115,9 +115,9 @@ jobs:
     - run: ls -lha build/app/outputs/apk/release/
     - run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
     - run: cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk ./.deploy_homol/
-    - run: cd ./.deploy_homol
-    - run: chmod 644 ./.deploy_homol/app-release.apk
-    - run: ls -lha ./.deploy_homol
+    - run: cd ./.deploy_homol/app-release.apk
+    #- run: chmod 644 ./.deploy_homol/app-release.apk
+    - run: ls -lha ./.deploy_homol/app-release.apk
     #- run: sh ./.scripts/sendMail.sh
 
     - run: sudo apt-get install openssl  
@@ -166,7 +166,7 @@ jobs:
     # Optional converting Markdown to HTML (set content_type to text/html too):
         convert_markdown: true
     # Optional attachments:
-        attachments: ./.deploy_homol/app-release.apk
+        #attachments: ./.deploy_homol/app-release.apk
     # Optional priority: 'high', 'normal' (default) or 'low'
         priority: low  
 
