@@ -149,7 +149,7 @@ jobs:
     # Required sender full name (address can be skipped):
         from: sidney.oliveira.projeto@zohomail.com # <user@example.com>
     # Optional plain body:
-        body: Build job of ${{github.repository}} completed successfully!
+        #body: Build job of ${{github.repository}} completed successfully!
     # Optional HTML body read from file:
         html_body: file://./.deploy_homol/autoleitura.html
     # Optional carbon copy recipients:
@@ -165,7 +165,7 @@ jobs:
     # Optional converting Markdown to HTML (set content_type to text/html too):
         convert_markdown: true
     # Optional attachments:
-        attachments: ./.deploy_homol/app-release.apk
+        #attachments: ./.deploy_homol/app-release.apk
     # Optional priority: 'high', 'normal' (default) or 'low'
         priority: low  
 
