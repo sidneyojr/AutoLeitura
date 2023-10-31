@@ -57,7 +57,16 @@ jobs:
 
     - name: Send message with URL
       run: echo "https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/${{ github.sha }}"
+    
+    - name: Enviar Mensagem Telegram
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        GITHUB_COMMIT_ID: ${{ github.sha }}
+      run: |
+        curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d chat_id=$TELEGRAM_CHAT_ID -d text="https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/$GITHUB_COMMIT_ID"
 
+        
   Build:
     needs: Teste
     runs-on: ubuntu-latest
