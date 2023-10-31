@@ -55,6 +55,9 @@ jobs:
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
+    - name: Send message with URL
+      run: echo "https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/${{ github.sha }}"
+
   Build:
     needs: Teste
     runs-on: ubuntu-latest
