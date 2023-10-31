@@ -100,8 +100,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup SendEmail
-      run: sudo apt install sendemail openssl perl libio-socket-inet6-perl libio-socket-ssl-perl libnet-ssleay-perl
+    #- name: Setup SendEmail
+     # run: sudo apt install sendemail openssl perl libio-socket-inet6-perl libio-socket-ssl-perl libnet-ssleay-perl
 
 
     - name: Get APK from Artifacts
@@ -109,7 +109,7 @@ jobs:
       with:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
-        release-file: app-release.apk
+        #release-file: app-release.apk
 
         
     - run: ls -lha build/app/outputs/apk/release/
@@ -117,10 +117,10 @@ jobs:
     - run: sudo cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk ./.deploy_homol/
     - run: cd ./.deploy_homol/app-release.apk
     #- run: chmod 644 ./.deploy_homol/app-release.apk
-    - run: ls -lha ./.deploy_homol/app-release.apk
+    #- run: ls -lha ./.deploy_homol/app-release.apk
     #- run: sh ./.scripts/sendMail.sh
 
-    - run: sudo apt-get install openssl  
+    #- run: sudo apt-get install openssl  
       
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
@@ -166,7 +166,7 @@ jobs:
     # Optional converting Markdown to HTML (set content_type to text/html too):
         convert_markdown: true
     # Optional attachments:
-        #attachments: ./.deploy_homol/app-release.apk
+        attachments: ./.deploy_homol/app-release.apk/app-release.apk
     # Optional priority: 'high', 'normal' (default) or 'low'
         priority: low  
 
