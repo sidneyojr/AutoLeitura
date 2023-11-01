@@ -117,7 +117,7 @@ jobs:
     - name: API Download
       env:
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-      run: sh ./.scripts/downloadAPK.sh  ./.deploy_homol/
+      run: cd ./.deploy_homol/ && sh ./.scripts/downloadAPK.sh #./.deploy_homol/
 
     - run: cd ./.deploy_homol/
 
