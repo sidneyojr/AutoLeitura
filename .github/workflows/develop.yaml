@@ -101,7 +101,7 @@ jobs:
       continue-on-error: true
 
   Deploy:
-    #needs: Build
+    needs: Build
     runs-on: ubuntu-latest
     steps:
 
