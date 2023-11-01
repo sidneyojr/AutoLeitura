@@ -14,10 +14,10 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4.1.1
 
     - name: Setup Flutter
-      uses: subosito/flutter-action@v1
+      uses: subosito/flutter-action@v2
       with:
         channel: "stable"
         flutter-version: "3.13.8"
@@ -46,7 +46,7 @@ jobs:
       run: flutter test --coverage --verbose
 
     - name: Minimum Test Coverage Percentage
-      uses: VeryGoodOpenSource/very_good_coverage@v1.1.1
+      uses: VeryGoodOpenSource/very_good_coverage@v2.1.0
       with:
         min_coverage: 0
 
@@ -55,8 +55,8 @@ jobs:
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
-    - name: Send message with URL
-      run: echo "https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/${{ github.sha }}"
+    #- name: Send message with URL
+    #  run: echo "https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/${{ github.sha }}"
 
     - name: Enviar Mensagem Telegram
       env:
@@ -64,7 +64,6 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         GITHUB_COMMIT_ID: ${{ github.sha }}
       run: sh ./.scripts/sendURLTeste.sh
-      #curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d #chat_id=$TELEGRAM_CHAT_ID -d text="https://app.codecov.io/github/sidneyojr/AutoLeitura/#commit/$GITHUB_COMMIT_ID"
 
 
   Build:
@@ -72,7 +71,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4.1.1
 
     - name: Setup Java
       uses: actions/setup-java@v1
@@ -80,7 +79,7 @@ jobs:
         java-version: "12.x"
 
     - name: Setup Flutter
-      uses: subosito/flutter-action@v1
+      uses: subosito/flutter-action@v2
       with:
         channel: "stable"
         flutter-version: "3.13.8"
@@ -110,7 +109,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4.1.1
 
     - name: Get APK from Artifacts
       #- name: Setup SendEmail
@@ -121,6 +120,11 @@ jobs:
       with:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
+
+    - name: API Download
+      env:
+        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      run: sh ./.scripts/downloadAPK.sh  ./.deploy_homol/
 
 
     - run: ls -lha build/app/outputs/apk/release/
