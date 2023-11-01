@@ -55,9 +55,6 @@ jobs:
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
-    #- name: Send message with URL
-    #  run: echo "https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/${{ github.sha }}"
-
     - name: Enviar Mensagem Telegram
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -112,10 +109,6 @@ jobs:
       uses: actions/checkout@v4.1.1
 
     - name: Get APK from Artifacts
-      #- name: Setup SendEmail
-      # run: sudo apt install sendemail openssl perl libio-socket-inet6-perl libio-socket-ssl-perl libnet-ssleay-perl
-
-
       uses: actions/download-artifact@v3
       with:
         name: APK-AUTOLEITURA
@@ -126,16 +119,7 @@ jobs:
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
       run: sh ./.scripts/downloadAPK.sh  ./.deploy_homol/
 
-
-    - run: ls -lha build/app/outputs/apk/release/
-    - run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
-    - run: sudo cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk/* ./.deploy_homol/
     - run: cd ./.deploy_homol/
-    #- run: sudo chmod 644 ./.deploy_homol/app-release.apk
-    - run: ls -lha ./.deploy_homol/
-    #- run: sh ./.scripts/sendMail.sh
-
-    #- run: sudo apt-get install openssl  
 
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
@@ -143,15 +127,15 @@ jobs:
         # Specify connection via URL (replaces server_address, server_port, secure,
         # username and password)
         #
-        # Format:
+        Format: smtp+starttls://user:password@server:port
         #
         #  * smtp://user:password@server:port
-        #  * smtp+starttls://user:password@server:port
-        #connection_url: ${{secrets.MAIL_CONNECTION}}
+
+        connection_url: ${{secrets.MAIL_CONNECTION}}
         # Required mail server address if not connection_url:
-        server_address: ${{secrets.MAIL_SERVER_ADDRESS}}
+        #server_address: ${{secrets.MAIL_SERVER_ADDRESS}}
         # Server port, default 25:
-        server_port: ${{secrets.SERVER_PORT}}
+        #server_port: ${{secrets.SERVER_PORT}}
         # Optional whether this connection use TLS (default is true if server_port is 465)
         secure: false
         # Optional (recommended) mail server username:
