@@ -57,16 +57,16 @@ jobs:
 
     - name: Send message with URL
       run: echo "https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/${{ github.sha }}"
-    
+
     - name: Enviar Mensagem Telegram
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         GITHUB_COMMIT_ID: ${{ github.sha }}
-      run: |
-        curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d chat_id=$TELEGRAM_CHAT_ID -d text="https://app.codecov.io/github/sidneyojr/AutoLeitura/commit/$GITHUB_COMMIT_ID"
+      run: sh ./.scripts/sendURLTeste.sh
+      #curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d #chat_id=$TELEGRAM_CHAT_ID -d text="https://app.codecov.io/github/sidneyojr/AutoLeitura/#commit/$GITHUB_COMMIT_ID"
 
-        
+
   Build:
     needs: Teste
     runs-on: ubuntu-latest
@@ -112,17 +112,17 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    #- name: Setup SendEmail
-     # run: sudo apt install sendemail openssl perl libio-socket-inet6-perl libio-socket-ssl-perl libnet-ssleay-perl
-
-
     - name: Get APK from Artifacts
+      #- name: Setup SendEmail
+      # run: sudo apt install sendemail openssl perl libio-socket-inet6-perl libio-socket-ssl-perl libnet-ssleay-perl
+
+
       uses: actions/download-artifact@v3
       with:
         name: APK-AUTOLEITURA
         path: build/app/outputs/apk/release/app-release.apk
 
-        
+
     - run: ls -lha build/app/outputs/apk/release/
     - run: ls -lha /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/
     - run: sudo cp -r /home/runner/work/AutoLeitura/AutoLeitura/build/app/outputs/apk/release/app-release.apk/* ./.deploy_homol/
@@ -132,56 +132,56 @@ jobs:
     #- run: sh ./.scripts/sendMail.sh
 
     #- run: sudo apt-get install openssl  
-      
+
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
-    # Specify connection via URL (replaces server_address, server_port, secure,
-    # username and password)
-    #
-    # Format:
-    #
-    #  * smtp://user:password@server:port
-    #  * smtp+starttls://user:password@server:port
+        # Specify connection via URL (replaces server_address, server_port, secure,
+        # username and password)
+        #
+        # Format:
+        #
+        #  * smtp://user:password@server:port
+        #  * smtp+starttls://user:password@server:port
         #connection_url: ${{secrets.MAIL_CONNECTION}}
-    # Required mail server address if not connection_url:
+        # Required mail server address if not connection_url:
         server_address: ${{secrets.MAIL_SERVER_ADDRESS}}
-    # Server port, default 25:
+        # Server port, default 25:
         server_port: ${{secrets.SERVER_PORT}}
-    # Optional whether this connection use TLS (default is true if server_port is 465)
+        # Optional whether this connection use TLS (default is true if server_port is 465)
         secure: false
-    # Optional (recommended) mail server username:
+        # Optional (recommended) mail server username:
         username: ${{secrets.MAIL_USERNAME}}
-    # Optional (recommended) mail server password:
+        # Optional (recommended) mail server password:
         password: ${{secrets.MAIL_PASSWORD}}
-    # Required mail subject:
+        # Required mail subject:
         subject: Github Actions job result
-    # Required recipients' addresses:
+        # Required recipients' addresses:
         to: sidneyoliveirajunior@gmail.com
-    # Required sender full name (address can be skipped):
+        # Required sender full name (address can be skipped):
         from: ${{secrets.MAIL_USERNAME}} # <user@example.com>
-    # Optional plain body:
+        # Optional plain body:
         #body: Build job of ${{github.repository}} completed successfully!
-    # Optional HTML body read from file:
+        # Optional HTML body read from file:
         html_body: file://./.deploy_homol/autoleitura.html
-    # Optional carbon copy recipients:
+        # Optional carbon copy recipients:
         #cc: kyloren@example.com,leia@example.com
-    # Optional blind carbon copy recipients:
+        # Optional blind carbon copy recipients:
         #bcc: r2d2@example.com,hansolo@example.com
-    # Optional recipient of the email response:
+        # Optional recipient of the email response:
         #reply_to: luke@example.com
-    # Optional Message ID this message is replying to:
+        # Optional Message ID this message is replying to:
         #in_reply_to: <random-luke@example.com>
-    # Optional unsigned/invalid certificates allowance:
+        # Optional unsigned/invalid certificates allowance:
         ignore_cert: true
-    # Optional converting Markdown to HTML (set content_type to text/html too):
+        # Optional converting Markdown to HTML (set content_type to text/html too):
         convert_markdown: true
-    # Optional attachments:
+        # Optional attachments:
         #attachments: ./.deploy_homol/app-release.apk/app-release.apk
-    # Optional priority: 'high', 'normal' (default) or 'low'
-        priority: low  
+        # Optional priority: 'high', 'normal' (default) or 'low'
+        priority: low
 
-      
+
 
 
 
