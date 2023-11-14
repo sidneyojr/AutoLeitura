@@ -1,16 +1,16 @@
-// ExibirDetalhes.dart
-
-// exibirdetalhes.dart
-
 import 'package:flutter/material.dart';
+import 'package:autoleitura/exibirconta.dart';
 
 class ExibirDetalhes extends StatelessWidget {
-  final Usuario usuario;
-  final Leitura leitura;
+  final usuario;
+  final leitura;
   final String mesAtual;
 
-  const ExibirDetalhes(
-      {required this.usuario, required this.leitura, required this.mesAtual});
+  const ExibirDetalhes({
+    required this.usuario,
+    required this.leitura,
+    required this.mesAtual,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -68,9 +68,19 @@ class ExibirDetalhes extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Lógica para imprimir
+                  // Navegar para a tela ExibirConta
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ExibirConta(
+                        usuario: usuario,
+                        leitura: leitura,
+                        mesAtual: mesAtual,
+                      ),
+                    ),
+                  );
                 },
-                child: Text('Imprimir'),
+                child: Text('Exibir Conta'),
               ),
             ],
           ),

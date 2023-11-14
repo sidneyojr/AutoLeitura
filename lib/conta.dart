@@ -39,7 +39,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
   void _calcularConta() async {
     // Simulação de um processo demorado
     await Future.delayed(
-        Duration(seconds: 5)); // Simulação de cálculo de 5 segundos
+        Duration(seconds: 1)); // Simulação de cálculo de 5 segundos
     // Quando o cálculo estiver concluído, interrompe a animação
     _controller.stop();
 
@@ -156,7 +156,10 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
       context,
       MaterialPageRoute(
         builder: (context) => ExibirDetalhes(
-          usuario: Usuario(codigo: widget.codigo, nome: 'João Carlos'),
+          usuario: Usuario(
+            codigo: widget.codigo,
+            nome: 'João Carlos',
+          ),
           leitura: Leitura(
               leituraAtual: widget.leitura,
               leituraAnterior: leituraAnterior,
