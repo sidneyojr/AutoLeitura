@@ -139,8 +139,7 @@ class ExibirConta extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.black,
-                      onPrimary: Colors.white,
+                      backgroundColor: Colors.black,
                     ),
                     child: Text('Gerar PDF'),
                   ),
@@ -149,8 +148,7 @@ class ExibirConta extends StatelessWidget {
                       // Lógica para pagar a conta
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.black,
-                      onPrimary: Colors.white,
+                      backgroundColor: Colors.black,
                     ),
                     child: Text('Pagar Conta'),
                   ),
