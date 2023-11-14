@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_tint_spinner.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_tint_default.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_tint_edittext.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/color-v23/abc_tint_switch_track.xml"
+    }
+]

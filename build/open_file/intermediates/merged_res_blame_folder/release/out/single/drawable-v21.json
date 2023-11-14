@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/drawable-v21/notification_action_background.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/drawable-v21/abc_list_divider_material.xml"
+    }
+]

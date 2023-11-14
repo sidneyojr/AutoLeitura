@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/interpolator/fast_out_slow_in.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/interpolator/fast_out_slow_in.xml"
+    }
+]

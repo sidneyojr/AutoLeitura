@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/layout-v21/notification_action.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/res/layout-v21/notification_template_custom_big.xml"
+    }
+]
