@@ -17,7 +17,7 @@
     <application
         android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@@mipmap/ic_launcher"
         android:label="autoleitura" >
         <activity
             android:name="com.example.autoleitura.MainActivity"
