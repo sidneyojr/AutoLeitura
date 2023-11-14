@@ -9,7 +9,7 @@ import 'dart:async';
 void main() {
   testWidgets('Teste Home', (WidgetTester tester) async {
     // Construir nossa tela Home e acionar um frame.
-    await tester.pumpWidget(MaterialApp(home: Home()));
+    await tester.pumpWidget(const MaterialApp(home: Home()));
 
     // Aguardar a árvore de widgets se estabilizar.
     await tester.pumpAndSettle();
@@ -123,8 +123,8 @@ void main() {
 
   testWidgets('Teste de Conta', (WidgetTester tester) async {
     // Construir nossa tela Conta e acionar um frame.
-    await tester
-        .pumpWidget(MaterialApp(home: Conta(codigo: '1234', leitura: 150.0)));
+    await tester.pumpWidget(
+        const MaterialApp(home: Conta(codigo: '1234', leitura: 150.0)));
 
     // Aguardar a árvore de widgets se estabilizar.
     await tester.pumpAndSettle();
