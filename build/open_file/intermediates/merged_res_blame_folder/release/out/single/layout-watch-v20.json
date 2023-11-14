@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/layout-watch-v20/abc_alert_dialog_title_material.xml",
-        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+        "merged": "com.crazecoder.openfile.open_file-merged_res-24:/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "com.crazecoder.openfile.open_file-appcompat-1.6.1-5:/layout-watch-v20/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+        "merged": "com.crazecoder.openfile.open_file-merged_res-24:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "com.crazecoder.openfile.open_file-appcompat-1.6.1-5:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
     }
 ]

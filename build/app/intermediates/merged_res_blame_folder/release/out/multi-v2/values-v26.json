@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "com.example.autoleitura2.app-mergeReleaseResources-23:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
+                    "source": "/home/sidney/.gradle/caches/transforms-3/5e1ab9db4bfbf3ac403646091b989b87/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

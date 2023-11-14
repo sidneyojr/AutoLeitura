@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.autoleitura2.app-mergeReleaseResources-23:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -14,16 +14,16 @@
                         "endOffsets": "475,981"
                     },
                     "to": {
-                        "startLines": "2,7",
+                        "startLines": "2,6",
                         "startColumns": "4,4",
-                        "startOffsets": "55,363",
-                        "endLines": "6,9",
+                        "startOffsets": "55,236",
+                        "endLines": "5,8",
                         "endColumns": "12,12",
-                        "endOffsets": "358,527"
+                        "endOffsets": "231,400"
                     }
                 },
                 {
-                    "source": "/home/sidney/.gradle/caches/transforms-3/eaa136ea70c1067c4729cf363c276d71/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/sidney/.gradle/caches/transforms-3/5e1ab9db4bfbf3ac403646091b989b87/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -32,11 +32,11 @@
                         "endOffsets": "120,204,288,384,486,588,682,771"
                     },
                     "to": {
-                        "startLines": "10,11,12,13,14,15,16,17",
+                        "startLines": "9,10,11,12,13,14,15,16",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "532,602,686,770,866,968,1070,1164",
+                        "startOffsets": "405,475,559,643,739,841,943,1037",
                         "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "597,681,765,861,963,1065,1159,1248"
+                        "endOffsets": "470,554,638,734,836,938,1032,1121"
                     }
                 }
             ]

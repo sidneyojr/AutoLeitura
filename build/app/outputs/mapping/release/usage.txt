@@ -3274,7 +3274,6 @@ androidx.core.internal.view.SupportMenu:
     public static final int USER_MASK
     public static final int USER_SHIFT
     public abstract void setGroupDividerEnabled(boolean)
-androidx.core.internal.view.SupportMenuItem$-CC
 androidx.core.internal.view.SupportMenuItem:
     public static final int SHOW_AS_ACTION_ALWAYS
     public static final int SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
@@ -3298,7 +3297,6 @@ androidx.core.location.LocationCompat$Api18Impl
 androidx.core.location.LocationCompat$Api26Impl
 androidx.core.location.LocationCompat
 androidx.core.location.LocationKt
-androidx.core.location.LocationListenerCompat$-CC
 androidx.core.location.LocationListenerCompat
 androidx.core.location.LocationManagerCompat$Api19Impl
 androidx.core.location.LocationManagerCompat$Api24Impl
@@ -3612,7 +3610,6 @@ androidx.core.util.Preconditions:
     public static java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence)
     public static java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence,java.lang.Object)
     public static varargs java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence,java.lang.String,java.lang.Object[])
-androidx.core.util.Predicate$-CC
 androidx.core.util.Predicate
 androidx.core.util.RangeKt$toClosedRange$1
 androidx.core.util.RangeKt
@@ -5631,8 +5628,6 @@ androidx.lifecycle.ComputableLiveData$1
 androidx.lifecycle.ComputableLiveData$2
 androidx.lifecycle.ComputableLiveData$3
 androidx.lifecycle.ComputableLiveData
-androidx.lifecycle.DefaultLifecycleObserver$-CC:
-    public static void $default$onResume(androidx.lifecycle.DefaultLifecycleObserver,androidx.lifecycle.LifecycleOwner)
 androidx.lifecycle.DefaultLifecycleObserver:
     public void onResume(androidx.lifecycle.LifecycleOwner)
 androidx.lifecycle.GenericLifecycleObserver
@@ -5650,7 +5645,6 @@ androidx.lifecycle.LifecycleDispatcher:
 androidx.lifecycle.LifecycleRegistry:
     public static androidx.lifecycle.LifecycleRegistry createUnsafe(androidx.lifecycle.LifecycleOwner)
     public int getObserverCount()
-androidx.lifecycle.LifecycleRegistryOwner$-CC
 androidx.lifecycle.LifecycleRegistryOwner:
     public synthetic bridge androidx.lifecycle.Lifecycle getLifecycle()
 androidx.lifecycle.Lifecycling$1:
@@ -5739,8 +5733,6 @@ androidx.lifecycle.ViewModelProvider$AndroidViewModelFactory:
     private final androidx.lifecycle.ViewModel create(java.lang.Class,android.app.Application)
     public androidx.lifecycle.ViewModel create(java.lang.Class,androidx.lifecycle.viewmodel.CreationExtras)
     public static final androidx.lifecycle.ViewModelProvider$AndroidViewModelFactory getInstance(android.app.Application)
-androidx.lifecycle.ViewModelProvider$Factory$-CC:
-    public static varargs androidx.lifecycle.ViewModelProvider$Factory from(androidx.lifecycle.viewmodel.ViewModelInitializer[])
 androidx.lifecycle.ViewModelProvider$Factory$Companion:
     public final varargs androidx.lifecycle.ViewModelProvider$Factory from(androidx.lifecycle.viewmodel.ViewModelInitializer[])
 androidx.lifecycle.ViewModelProvider$NewInstanceFactory$Companion:
@@ -6266,23 +6258,24 @@ com.crazecoder.openfile.utils.JsonUtil:
     public void <init>()
 com.crazecoder.openfile.utils.MapUtil:
     public void <init>()
-com.example.autoleitura.BuildConfig
-com.example.autoleitura.R$anim
-com.example.autoleitura.R$animator
-com.example.autoleitura.R$attr
-com.example.autoleitura.R$bool
-com.example.autoleitura.R$color
-com.example.autoleitura.R$dimen
-com.example.autoleitura.R$drawable
-com.example.autoleitura.R$id
-com.example.autoleitura.R$integer
-com.example.autoleitura.R$interpolator
-com.example.autoleitura.R$layout
-com.example.autoleitura.R$string
-com.example.autoleitura.R$style
-com.example.autoleitura.R$styleable
-com.example.autoleitura.R$xml
-com.example.autoleitura.R
+com.example.autoleitura2.BuildConfig
+com.example.autoleitura2.R$anim
+com.example.autoleitura2.R$animator
+com.example.autoleitura2.R$attr
+com.example.autoleitura2.R$bool
+com.example.autoleitura2.R$color
+com.example.autoleitura2.R$dimen
+com.example.autoleitura2.R$drawable
+com.example.autoleitura2.R$id
+com.example.autoleitura2.R$integer
+com.example.autoleitura2.R$interpolator
+com.example.autoleitura2.R$layout
+com.example.autoleitura2.R$mipmap
+com.example.autoleitura2.R$string
+com.example.autoleitura2.R$style
+com.example.autoleitura2.R$styleable
+com.example.autoleitura2.R$xml
+com.example.autoleitura2.R
 com.google.common.util.concurrent.ListenableFuture
 io.flutter.BuildConfig
 io.flutter.FlutterInjector$Builder:
@@ -6756,10 +6749,7 @@ io.flutter.plugin.common.BasicMessageChannel:
     static void resizeChannelBuffer(io.flutter.plugin.common.BinaryMessenger,java.lang.String,int)
 io.flutter.plugin.common.BinaryCodec
 io.flutter.plugin.common.BinaryMessenger$-CC:
-    public static void $default$disableBufferingIncomingMessages(io.flutter.plugin.common.BinaryMessenger)
-    public static void $default$enableBufferingIncomingMessages(io.flutter.plugin.common.BinaryMessenger)
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger)
-    public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
 io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions
 io.flutter.plugin.common.BinaryMessenger:
     public void disableBufferingIncomingMessages()
@@ -6904,7 +6894,6 @@ io.flutter.view.FlutterView$SurfaceTextureRegistryEntry
 io.flutter.view.FlutterView$ViewportMetrics
 io.flutter.view.FlutterView$ZeroSides
 io.flutter.view.FlutterView
-io.flutter.view.TextureRegistry$-CC
 io.flutter.view.TextureRegistry$SurfaceTextureEntry:
     public abstract void release()
 io.flutter.view.TextureRegistry:
@@ -10366,6 +10355,7 @@ kotlin.jvm.internal.markers.KMutableMap
 kotlin.jvm.internal.markers.KMutableSet
 kotlin.jvm.internal.unsafe.MonitorKt
 kotlin.jvm.jdk8.JvmRepeatableKt
+kotlin.jvm.optionals.OptionalsKt
 kotlin.math.Constants
 kotlin.math.MathKt
 kotlin.math.MathKt__MathHKt
@@ -13234,36 +13224,41 @@ org.jetbrains.annotations.Nullable
 org.jetbrains.annotations.PropertyKey
 org.jetbrains.annotations.TestOnly
 androidx.appcompat.app.ToolbarActionBar
+androidx.appcompat.graphics.drawable.DrawableWrapperCompat:
+    public android.graphics.drawable.Drawable getDrawable()
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper:
+    private static java.lang.Object accessAndReturnWithDefault(java.lang.Object,java.lang.String,java.lang.Object)
+    private android.text.StaticLayout createStaticLayoutForMeasuringPre16(java.lang.CharSequence,android.text.Layout$Alignment,int)
+    private static java.lang.reflect.Field getTextViewField(java.lang.String)
 androidx.core.app.SharedElementCallback:
     public abstract void onMapSharedElements(java.util.List,java.util.Map)
     public abstract void onSharedElementEnd(java.util.List,java.util.List,java.util.List)
     public abstract void onSharedElementStart(java.util.List,java.util.List,java.util.List)
+androidx.core.content.ContextCompat:
+    private static android.util.TypedValue sTempValue
 androidx.core.text.PrecomputedTextCompat:
     private static java.util.concurrent.Executor sExecutor
 androidx.core.view.MenuProvider$-CC
+androidx.core.view.ViewCompat:
+    private static java.lang.reflect.Field sMinHeightField
+    private static boolean sMinHeightFieldFetched
+androidx.core.view.ViewPropertyAnimatorCompat$ViewPropertyAnimatorListenerApi14
+androidx.core.widget.CheckedTextViewCompat$Api14Impl
+androidx.core.widget.TextViewOnReceiveContentListener$ApiImpl
 androidx.emoji2.text.FontRequestEmojiCompatConfig$FontProviderHelper:
     public void registerObserver(android.content.Context,android.net.Uri,android.database.ContentObserver)
-androidx.emoji2.text.FontRequestEmojiCompatConfig$FontRequestMetadataLoader$$InternalSyntheticLambda$2$86ff27c49f2f02cfc15b1c33bc0b5b530a86503a7eecfa8f0957b7e04f5ec92e$0
+androidx.emoji2.text.FontRequestEmojiCompatConfig$FontRequestMetadataLoader$$InternalSyntheticLambda$3$d409883cad71d8f4b6db9b2434f56e8d799766464322138a9b482cb4d8f3b7a8$0
 androidx.emoji2.text.FontRequestEmojiCompatConfig$FontRequestMetadataLoader$1
 androidx.emoji2.text.FontRequestEmojiCompatConfig$FontRequestMetadataLoader:
     private androidx.emoji2.text.FontRequestEmojiCompatConfig$RetryPolicy mRetryPolicy
     private void scheduleRetry(android.net.Uri,long)
 androidx.emoji2.text.FontRequestEmojiCompatConfig$RetryPolicy
-androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks:
-    public abstract void onFragmentActivityCreated(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.os.Bundle)
-    public abstract void onFragmentAttached(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.content.Context)
-    public abstract void onFragmentCreated(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.os.Bundle)
-    public abstract void onFragmentDestroyed(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
-    public abstract void onFragmentDetached(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
-    public abstract void onFragmentPaused(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
-    public abstract void onFragmentPreAttached(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.content.Context)
-    public abstract void onFragmentPreCreated(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.os.Bundle)
-    public abstract void onFragmentResumed(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
-    public abstract void onFragmentSaveInstanceState(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.os.Bundle)
-    public abstract void onFragmentStarted(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
-    public abstract void onFragmentStopped(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
-    public abstract void onFragmentViewCreated(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.view.View,android.os.Bundle)
-    public abstract void onFragmentViewDestroyed(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
+androidx.fragment.app.Fragment$AnimationInfo:
+    androidx.core.app.SharedElementCallback mEnterTransitionCallback
+    androidx.core.app.SharedElementCallback mExitTransitionCallback
+androidx.fragment.app.FragmentLifecycleCallbacksDispatcher$FragmentLifecycleCallbacksHolder:
+    final androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks mCallback
+androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks
 androidx.fragment.app.FragmentTransition:
     static java.lang.String findKeyForValue(androidx.collection.ArrayMap,java.lang.String)
 androidx.lifecycle.DefaultLifecycleObserver:
@@ -13282,9 +13277,14 @@ androidx.lifecycle.LiveData:
     public java.lang.Object getValue()
     public boolean hasActiveObservers()
     public void observe(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
+androidx.lifecycle.ViewModelProvider$Factory$Companion
+androidx.lifecycle.ViewModelProvider$Factory:
+    public static final androidx.lifecycle.ViewModelProvider$Factory$Companion Companion
+    static void <clinit>()
 androidx.lifecycle.ViewModelProvider$NewInstanceFactory:
     public synthetic androidx.lifecycle.ViewModel create(java.lang.Class,androidx.lifecycle.viewmodel.CreationExtras)
 androidx.loader.app.LoaderManagerImpl$LoaderInfo:
+    private final androidx.loader.content.Loader mLoader
     private androidx.loader.app.LoaderManagerImpl$LoaderObserver mObserver
     private androidx.loader.content.Loader mPriorLoader
     androidx.loader.content.Loader getLoader()
@@ -13308,6 +13308,13 @@ io.flutter.Log:
     public static int VERBOSE
     public static int WARN
     private static int logLevel
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineServicePluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
+    private io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding broadcastReceiverPluginBinding
+    private io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding contentProviderPluginBinding
+    private io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineServicePluginBinding servicePluginBinding
 io.flutter.embedding.engine.loader.ResourceExtractor:
     void waitForCompletion()
 io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler$-CC
@@ -13317,6 +13324,23 @@ io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.platform.VirtualDisplayController:
     private static java.lang.String TAG
 io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
+io.flutter.view.VsyncWaiter:
+    public static io.flutter.view.VsyncWaiter getInstance(float,io.flutter.embedding.engine.FlutterJNI)
+kotlin.collections.ArraysKt:
+    public static synthetic bridge java.util.List sortedWith(java.lang.Object[],java.util.Comparator)
+kotlin.collections.ArraysKt___ArraysJvmKt:
+    public static final void sortWith(java.lang.Object[],java.util.Comparator)
+kotlin.collections.ArraysKt___ArraysKt:
+    public static final java.lang.Object[] sortedArrayWith(java.lang.Object[],java.util.Comparator)
+    public static java.util.List sortedWith(java.lang.Object[],java.util.Comparator)
+kotlin.comparisons.ComparisonsKt
+kotlin.comparisons.ComparisonsKt__ComparisonsKt
+kotlin.comparisons.ComparisonsKt___ComparisonsJvmKt
+kotlin.comparisons.ComparisonsKt___ComparisonsKt
+kotlin.coroutines.jvm.internal.CoroutineStackFrame:
+    public abstract java.lang.StackTraceElement getStackTraceElement()
+kotlin.jvm.JvmClassMappingKt:
+    public static final kotlin.reflect.KClass getKotlinClass(java.lang.Class)
 kotlin.random.AbstractPlatformRandom:
     public int nextBits(int)
 kotlin.random.Random$Default:
@@ -13334,9 +13358,54 @@ kotlinx.coroutines.AbstractTimeSource:
     public abstract void unpark(java.lang.Thread)
     public abstract void unregisterTimeLoopThread()
     public abstract java.lang.Runnable wrapTask(java.lang.Runnable)
+kotlinx.coroutines.AbstractTimeSourceKt:
+    private static kotlinx.coroutines.AbstractTimeSource timeSource
+kotlinx.coroutines.CancellableContinuationImpl:
+    public java.lang.StackTraceElement getStackTraceElement()
+kotlinx.coroutines.CopyableThrowable
+kotlinx.coroutines.CoroutineId$$InternalSyntheticBackport$1$88b55f898e619a095cc84362698f8c48db09cb4c6a8de7e7316829eafb79037d$0
+kotlinx.coroutines.CoroutineId$Key
+kotlinx.coroutines.CoroutineId
+kotlinx.coroutines.CoroutineName$Key
+kotlinx.coroutines.CoroutineName
+kotlinx.coroutines.DebugKt
+kotlinx.coroutines.JobCancellationException:
+    public synthetic bridge java.lang.Throwable createCopy()
+    public kotlinx.coroutines.JobCancellationException createCopy()
+kotlinx.coroutines.NodeList:
+    public final java.lang.String getString(java.lang.String)
 kotlinx.coroutines.TimeoutCancellationException
 kotlinx.coroutines.internal.AtomicDesc
+kotlinx.coroutines.internal.ClassValueCtorCache$cache$1
+kotlinx.coroutines.internal.ClassValueCtorCache
+kotlinx.coroutines.internal.CtorCache
+kotlinx.coroutines.internal.DispatchedContinuation:
+    public java.lang.StackTraceElement getStackTraceElement()
+kotlinx.coroutines.internal.ExceptionsConstructorKt$createConstructor$$inlined$sortedByDescending$1
+kotlinx.coroutines.internal.ExceptionsConstructorKt$createConstructor$nullResult$1
+kotlinx.coroutines.internal.ExceptionsConstructorKt$createSafeConstructor$$inlined$safeCtor$1
+kotlinx.coroutines.internal.ExceptionsConstructorKt$createSafeConstructor$$inlined$safeCtor$2
+kotlinx.coroutines.internal.ExceptionsConstructorKt$createSafeConstructor$$inlined$safeCtor$3
+kotlinx.coroutines.internal.ExceptionsConstructorKt$createSafeConstructor$$inlined$safeCtor$4
+kotlinx.coroutines.internal.ExceptionsConstructorKt
 kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc
 kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp:
     public final kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc desc
     public final void finishPrepare()
+kotlinx.coroutines.internal.ScopeCoroutine:
+    public final java.lang.StackTraceElement getStackTraceElement()
+kotlinx.coroutines.internal.StackTraceRecoveryKt:
+    public static final synthetic java.lang.Throwable access$recoverFromStackFrame(java.lang.Throwable,kotlin.coroutines.jvm.internal.CoroutineStackFrame)
+    public static final java.lang.StackTraceElement artificialFrame(java.lang.String)
+    private static final kotlin.Pair causeAndStacktrace(java.lang.Throwable)
+    private static final java.lang.Throwable createFinalException(java.lang.Throwable,java.lang.Throwable,java.util.ArrayDeque)
+    private static final java.util.ArrayDeque createStackTrace(kotlin.coroutines.jvm.internal.CoroutineStackFrame)
+    private static final boolean elementWiseEquals(java.lang.StackTraceElement,java.lang.StackTraceElement)
+    private static final int frameIndex(java.lang.StackTraceElement[],java.lang.String)
+    public static final boolean isArtificial(java.lang.StackTraceElement)
+    private static final void mergeRecoveredTraces(java.lang.StackTraceElement[],java.util.ArrayDeque)
+    private static final java.lang.Throwable recoverFromStackFrame(java.lang.Throwable,kotlin.coroutines.jvm.internal.CoroutineStackFrame)
+    private static final java.lang.Throwable sanitizeStackTrace(java.lang.Throwable)
+    private static final java.lang.Throwable tryCopyAndVerify(java.lang.Throwable)
+    public static final java.lang.Throwable unwrapImpl(java.lang.Throwable)
+kotlinx.coroutines.internal.WeakMapCtorCache

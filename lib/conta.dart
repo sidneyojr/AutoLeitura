@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:autoleitura/exibirdetalhes.dart';
+import 'package:autoleitura2/exibirdetalhes.dart';
 
 class Conta extends StatefulWidget {
   final String codigo;

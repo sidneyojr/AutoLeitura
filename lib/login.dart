@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:autoleitura/leitura.dart';
+import 'package:autoleitura2/leitura.dart';
 
 class Login extends StatelessWidget {
   final codigoUsuarioController = TextEditingController();

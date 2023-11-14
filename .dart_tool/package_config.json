@@ -63,9 +63,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.19"
     },
     {
       "name": "fake_async",
@@ -87,9 +87,9 @@
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.2",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "flutter_test",
@@ -111,9 +111,9 @@
     },
     {
       "name": "lints",
-      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.0.1",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "matcher",
@@ -242,13 +242,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "autoleitura",
+      "name": "autoleitura2",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-11-14T07:49:46.196661Z",
+  "generated": "2023-11-14T09:03:35.056371Z",
   "generator": "pub",
   "generatorVersion": "3.1.4"
 }

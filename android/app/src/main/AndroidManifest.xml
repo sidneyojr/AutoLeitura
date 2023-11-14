@@ -1,9 +1,8 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.autoleitura">
-   <application
-        android:label="autoleitura"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="autoleitura2"
         android:name="${applicationName}"
-        android:icon="@drawable/ic_launcher">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"

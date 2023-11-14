@@ -1,5 +1,5 @@
-import 'package:autoleitura/exibirdetalhes.dart';
-import 'package:autoleitura/gerarpdf.dart';
+import 'package:autoleitura2/exibirdetalhes.dart';
+import 'package:autoleitura2/gerarpdf.dart';
 import 'package:flutter/material.dart';
 
 class ExibirConta extends StatelessWidget {

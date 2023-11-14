@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_res/release/xml/filepaths.xml",
-        "source": "/home/sidney/.pub-cache/hosted/pub.dev/open_file-3.3.2/android/src/main/res/xml/filepaths.xml"
+        "merged": "com.crazecoder.openfile.open_file-merged_res-24:/xml/filepaths.xml",
+        "source": "com.crazecoder.openfile.open_file-main-18:/xml/filepaths.xml"
     }
 ]

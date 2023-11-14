@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.autoleitura"
+    package="com.example.autoleitura2"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -9,18 +9,18 @@
         android:targetSdkVersion="33" />
 
     <permission
-        android:name="com.example.autoleitura.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.example.autoleitura2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.autoleitura.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.example.autoleitura2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="autoleitura" >
+        android:label="autoleitura2" >
         <activity
-            android:name="com.example.autoleitura.MainActivity"
+            android:name="com.example.autoleitura2.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -54,7 +54,7 @@
 
         <provider
             android:name="com.crazecoder.openfile.FileProvider"
-            android:authorities="com.example.autoleitura.fileProvider.com.crazecoder.openfile"
+            android:authorities="com.example.autoleitura2.fileProvider.com.crazecoder.openfile"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -71,7 +71,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.autoleitura.androidx-startup"
+            android:authorities="com.example.autoleitura2.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

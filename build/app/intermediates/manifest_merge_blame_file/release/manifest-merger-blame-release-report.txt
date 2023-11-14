@@ -1,51 +1,51 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.autoleitura"
+3    package="com.example.autoleitura2"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml
+8-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml
+9-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml
 10
 11    <permission
-11-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.autoleitura.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+11-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.autoleitura2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 14
-15    <uses-permission android:name="com.example.autoleitura.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+15    <uses-permission android:name="com.example.autoleitura2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 16
 17    <application
 18        android:name="android.app.Application"
-18-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:5:9-42
+18-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:4:9-42
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-20        android:icon="@drawable/ic_launcher"
-20-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:6:9-45
-21        android:label="autoleitura" >
-21-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:4:9-36
+19-->[androidx.core:core:1.9.0] /home/sidney/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+20        android:icon="@mipmap/ic_launcher"
+20-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:5:9-43
+21        android:label="autoleitura2" >
+21-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:3:9-37
 22        <activity
-22-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:7:9-27:20
-23            android:name="com.example.autoleitura.MainActivity"
-23-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:8:13-41
+22-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:6:9-26:20
+23            android:name="com.example.autoleitura2.MainActivity"
+23-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:7:13-41
 24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-24-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:12:13-163
+24-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:11:13-163
 25            android:exported="true"
-25-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:9:13-36
+25-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:8:13-36
 26            android:hardwareAccelerated="true"
-26-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:13:13-47
+26-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:12:13-47
 27            android:launchMode="singleTop"
-27-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:10:13-43
+27-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:9:13-43
 28            android:theme="@style/LaunchTheme"
-28-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:11:13-47
+28-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:10:13-47
 29            android:windowSoftInputMode="adjustResize" >
-29-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:14:13-55
+29-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:13:13-55
 30
 31            <!--
 32                 Specifies an Android theme to apply to this Activity as soon as
@@ -54,21 +54,21 @@
 35                 to determine the Window background behind the Flutter UI.
 36            -->
 37            <meta-data
-37-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:19:13-22:17
+37-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:18:13-21:17
 38                android:name="io.flutter.embedding.android.NormalTheme"
-38-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:20:15-70
+38-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:19:15-70
 39                android:resource="@style/NormalTheme" />
-39-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:21:15-52
+39-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:20:15-52
 40
 41            <intent-filter>
-41-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:23:13-26:29
+41-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:22:13-25:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:24:17-68
-42-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:24:25-66
+42-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:23:17-68
+42-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:23:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:25:17-76
-44-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:25:27-74
+44-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:24:17-76
+44-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:24:27-74
 45            </intent-filter>
 46        </activity>
 47        <!--
@@ -76,63 +76,63 @@
 49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 50        -->
 51        <meta-data
-51-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:30:9-32:33
+51-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:29:9-31:33
 52            android:name="flutterEmbedding"
-52-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:31:13-44
+52-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:30:13-44
 53            android:value="2" />
-53-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android/app/src/main/AndroidManifest.xml:32:13-30
+53-->/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android/app/src/main/AndroidManifest.xml:31:13-30
 54
 55        <provider
-55-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-20:20
+55-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-20:20
 56            android:name="com.crazecoder.openfile.FileProvider"
-56-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
-57            android:authorities="com.example.autoleitura.fileProvider.com.crazecoder.openfile"
-57-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-88
+56-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
+57            android:authorities="com.example.autoleitura2.fileProvider.com.crazecoder.openfile"
+57-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-88
 58            android:exported="false"
-58-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+58-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
 59            android:grantUriPermissions="true" >
-59-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-47
+59-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-47
 60            <meta-data
-60-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-19:53
+60-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-19:53
 61                android:name="android.support.FILE_PROVIDER_PATHS"
-61-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:18:17-67
+61-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:18:17-67
 62                android:resource="@xml/filepaths" />
-62-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-50
+62-->[:open_file] /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-50
 63        </provider>
 64
 65        <uses-library
-65-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+65-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 66            android:name="androidx.window.extensions"
-66-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+66-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
 67            android:required="false" />
-67-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+67-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
 68        <uses-library
-68-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+68-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
 69            android:name="androidx.window.sidecar"
-69-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+69-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
 70            android:required="false" />
-70-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+70-->[androidx.window:window:1.0.0-beta04] /home/sidney/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 71
 72        <provider
-72-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+72-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 73            android:name="androidx.startup.InitializationProvider"
-73-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-74            android:authorities="com.example.autoleitura.androidx-startup"
-74-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+73-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+74            android:authorities="com.example.autoleitura2.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
 75            android:exported="false" >
-75-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+75-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
 76            <meta-data
-76-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+76-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-77-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+77-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
 78                android:value="androidx.startup" />
-78-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+78-->[androidx.emoji2:emoji2:1.2.0] /home/sidney/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
 79            <meta-data
-79-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sidney/.gradle/caches/transforms-3/c7dc2d946f639e7b414f5fbe78913a76/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+79-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sidney/.gradle/caches/transforms-3/8c1e738388b632b23acecc5b0cf3e292/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
 80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-80-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sidney/.gradle/caches/transforms-3/c7dc2d946f639e7b414f5fbe78913a76/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+80-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sidney/.gradle/caches/transforms-3/8c1e738388b632b23acecc5b0cf3e292/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
 81                android:value="androidx.startup" />
-81-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sidney/.gradle/caches/transforms-3/c7dc2d946f639e7b414f5fbe78913a76/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+81-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sidney/.gradle/caches/transforms-3/8c1e738388b632b23acecc5b0cf3e292/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
 82        </provider>
 83    </application>
 84

@@ -1,3 +1,2 @@
-2023/11/14-03:45:56.478 17a25 Reusing MANIFEST /tmp/flutter_tools.NARBWB/flutter_tools_chrome_device.OCBPNP/Default/Service Worker/Database/MANIFEST-000001
-2023/11/14-03:45:56.478 17a25 Recovering log #3
-2023/11/14-03:45:56.478 17a25 Reusing old log /tmp/flutter_tools.NARBWB/flutter_tools_chrome_device.OCBPNP/Default/Service Worker/Database/000003.log 
+2023/11/14-05:42:36.377 1e240 Creating DB /tmp/flutter_tools.RZWEFX/flutter_tools_chrome_device.RJSXYV/Default/Service Worker/Database since it was missing.
+2023/11/14-05:42:36.385 1e240 Reusing MANIFEST /tmp/flutter_tools.RZWEFX/flutter_tools_chrome_device.RJSXYV/Default/Service Worker/Database/MANIFEST-000001
