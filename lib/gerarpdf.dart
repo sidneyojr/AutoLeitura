@@ -1,7 +1,7 @@
 import 'dart:io' as io;
-import 'package:autoleitura2/exibirdetalhes.dart';
+import 'package:autoleitura/exibirdetalhes.dart';
 // ignore: unused_import
-import 'package:autoleitura2/leitura.dart';
+import 'package:autoleitura/leitura.dart';
 import 'package:flutter/material.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:open_file/open_file.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:autoleitura2/conta.dart';
+import 'package:autoleitura/conta.dart';
 
 class Leitura extends StatefulWidget {
   final String codigo;

@@ -1,9 +1,9 @@
-import 'package:autoleitura2/conta.dart';
-import 'package:autoleitura2/home.dart';
+import 'package:autoleitura/conta.dart';
+import 'package:autoleitura/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:autoleitura2/login.dart';
-import 'package:autoleitura2/leitura.dart';
+import 'package:autoleitura/login.dart';
+import 'package:autoleitura/leitura.dart';
 import 'dart:async';
 
 void main() {

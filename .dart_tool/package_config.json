@@ -242,13 +242,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "autoleitura2",
+      "name": "autoleitura",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-11-14T09:03:35.056371Z",
+  "generated": "2023-11-14T09:06:32.012150Z",
   "generator": "pub",
   "generatorVersion": "3.1.4"
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:autoleitura2/exibirconta.dart';
+import 'package:autoleitura/exibirconta.dart';
 
 class ExibirDetalhes extends StatelessWidget {
   final usuario;
