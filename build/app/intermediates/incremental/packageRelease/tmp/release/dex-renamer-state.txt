@@ -1,4 +1,4 @@
-#Tue Nov 14 05:26:11 BRT 2023
-base.0=/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+#Tue Nov 14 06:15:31 BRT 2023
+base.0=/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

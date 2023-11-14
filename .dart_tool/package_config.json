@@ -2,10 +2,28 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-61.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/analyzer-5.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/archive-3.4.9",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/args-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "async",
@@ -56,6 +74,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "coverage",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/coverage-1.6.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
@@ -80,6 +104,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "file",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///home/sidney/Development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -98,10 +128,40 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/glob-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "http_multi_server",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "image",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/image-4.1.3",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/io-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "js",
@@ -114,6 +174,12 @@
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "matcher",
@@ -134,10 +200,34 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mime",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/mime-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/node_preamble-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "open_app_file",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "open_file",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/open_file-3.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/package_config-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "path",
@@ -170,16 +260,64 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "pool",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "qr",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/qr-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
     {
+      "name": "shelf",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/shelf_static-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///home/sidney/Development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/source_maps-0.10.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "source_span",
@@ -212,8 +350,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "test",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/test-1.24.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "test_api",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/test_api-0.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/test_core-0.5.3",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -230,14 +380,44 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "vm_service",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/vm_service-11.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/watcher-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "web",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/web-0.1.4-beta",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
     {
+      "name": "web_socket_channel",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "xml",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/xml-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/yaml-3.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -248,7 +428,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-11-14T09:06:57.438379Z",
+  "generated": "2023-11-14T09:23:54.167295Z",
   "generator": "pub",
   "generatorVersion": "3.1.4"
 }

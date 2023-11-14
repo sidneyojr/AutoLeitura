@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0
+# The proguard configuration file for the following section is /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -116,7 +116,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0
+# End of content from /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0
 # The proguard configuration file for the following section is /home/sidney/Development/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
@@ -127,7 +127,7 @@
 -dontwarn android.**
 
 # End of content from /home/sidney/Development/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
-# The proguard configuration file for the following section is /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# The proguard configuration file for the following section is /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 -keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
@@ -174,7 +174,7 @@
 -keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
 
 
-# End of content from /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# End of content from /home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 # The proguard configuration file for the following section is /home/sidney/.gradle/caches/transforms-3/5e1ab9db4bfbf3ac403646091b989b87/transformed/appcompat-1.6.1/proguard.txt
 # Copyright (C) 2018 The Android Open Source Project
 #

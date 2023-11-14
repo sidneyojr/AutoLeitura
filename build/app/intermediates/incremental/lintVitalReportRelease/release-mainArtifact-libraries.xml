@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
-      jars="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/flutter/release/libs.jar"
-      resolved="__local_aars__:/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
+      name="__local_aars__:/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
+      jars="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/flutter/release/libs.jar"
+      resolved="__local_aars__:/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
-      name="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/android@@:open_file::release"
-      jars="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/.transforms/3448c540f2fa3f82f343ce69543ae03d/transformed/out/jars/classes.jar:/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/.transforms/3448c540f2fa3f82f343ce69543ae03d/transformed/out/jars/libs/R.jar"
+      name="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/android@@:open_file::release"
+      jars="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/.transforms/24f2389024255c09e392506f90524f37/transformed/out/jars/classes.jar:/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/.transforms/24f2389024255c09e392506f90524f37/transformed/out/jars/libs/R.jar"
       resolved="com.crazecoder.openfile:open_file:unspecified"
-      folder="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/autoleitura2/build/open_file/.transforms/3448c540f2fa3f82f343ce69543ae03d/transformed/out"
+      folder="/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/open_file/.transforms/24f2389024255c09e392506f90524f37/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
