@@ -36,5 +36,11 @@ Este projeto é um ponto de partida para uma aplicação Flutter.
 
 A imagem original pode ser acessada em *[Imagem Original](https://encurtador.com.br/hiwZ3)*
 
+##
+
+## API AutoLeitura
+
+[Repositório API AuloLeitura](https://github.com/sidneyojr/apiAutoLeitura)
+
 
 
