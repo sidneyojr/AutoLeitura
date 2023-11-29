@@ -1,17 +1,17 @@
-import 'package:autoleitura/home.dart';
+import 'package:autoleitura/autoleiturascreen.dart';
 import 'package:flutter/material.dart';
-//import 'package:autoleitura/home.dart';
 
-// main
 void main() {
-  runApp(AutoLeitura());
+  runApp(const AutoLeitura());
 }
 
 class AutoLeitura extends StatelessWidget {
+  const AutoLeitura({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: AutoLeituraScreen(),
     );
   }
 }
