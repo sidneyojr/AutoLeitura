@@ -1,15 +1,14 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:autoleitura/conta.dart';
+import 'package:http/http.dart' as http;
+
+var apiUrl =
+    'http://env-2733645.jelastic.saveincloud.net/leituras/leituras.php';
 
 class Leitura extends StatefulWidget {
-  final String codigo;
+  final int userId;
 
-  Leitura(
-      {required this.codigo,
-      required double leituraAtual,
-      required double leituraAnterior,
-      required double valorCalculado,
-      required double leitura});
+  const Leitura({Key? key, required this.userId}) : super(key: key);
 
   @override
   _LeituraState createState() => _LeituraState();
@@ -17,43 +16,87 @@ class Leitura extends StatefulWidget {
 
 class _LeituraState extends State<Leitura> {
   final leituraController = TextEditingController();
-  late String nomeMes;
-
-  @override
-  void initState() {
-    super.initState();
-    nomeMes = _obterNomeMes(DateTime.now().month);
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AUTO LEITURA - INSERIR A LEITURA DO MÊS'),
-        backgroundColor: Color.fromARGB(255, 0, 5, 8),
+        title: const Text('AUTO LEITURA - INSERIR LEITURA'),
+        backgroundColor: const Color.fromARGB(255, 0, 5, 8),
+        centerTitle: true,
       ),
+      backgroundColor: Color.fromARGB(255, 217, 230, 247),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                'Coloque aqui a leitura do mês de $nomeMes',
+              const Text(
+                'Insira a leitura abaixo',
                 style: TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 10),
-              TextField(
+              const SizedBox(height: 10),
+              TextFormField(
                 controller: leituraController,
-                decoration: InputDecoration(labelText: 'Leitura do Mês'),
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  labelText: 'Leitura',
+                  border: OutlineInputBorder(),
+                ),
               ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  _mostrarDialog(
-                      context, widget.codigo, leituraController.text);
-                },
-                child: Text('Enviar Leitura'),
+              const SizedBox(height: 20.0),
+              Material(
+                color: Color.fromARGB(255, 15, 76, 129), // Azul mais claro
+                borderRadius: BorderRadius.circular(20.0),
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(20.0),
+                  onTap: () async {
+                    String leitura = leituraController.text;
+
+                    int leituraInt = int.parse(leitura);
+
+                    try {
+                      int userId = widget.userId;
+
+                      final response = await http.post(
+                        Uri.parse(apiUrl),
+                        body: jsonEncode({
+                          'codigo': userId,
+                          'leitura': leituraInt,
+                        }),
+                        headers: {'Content-Type': 'application/json'},
+                      );
+
+                      if (response.statusCode == 200) {
+                        Map<String, dynamic> data = json.decode(response.body);
+                        print(data);
+                        if (data.containsKey('code') && data['code'] == 0) {
+                          _mostrarDialog(
+                              context, 'Leitura inserida com sucesso');
+                        } else {
+                          _mostrarDialog(context, 'Erro ao inserir leitura');
+                        }
+                      } else {
+                        _mostrarDialog(context,
+                            'Erro na requisição: ${response.statusCode}');
+                      }
+                    } catch (error) {
+                      print('Erro ao inserir leitura: $error');
+                      _mostrarDialog(context, 'Erro ao inserir leitura');
+                    }
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: Text(
+                      'Inserir Leitura',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
@@ -61,66 +104,30 @@ class _LeituraState extends State<Leitura> {
       ),
     );
   }
+}
 
-  void _mostrarDialog(BuildContext context, String codigo, String leitura) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Confirmação de Leitura'),
-          content: Text(
-            'Está correto sua leitura?\n\nValor da Leitura: ${double.parse(leitura)}',
-            style: TextStyle(fontWeight: FontWeight.bold),
+void _mostrarDialog(BuildContext context, String mensagem) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text('Resultado da Inserção'),
+        content: Text(mensagem),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: const Text('OK'),
           ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context); // Fecha o dialog
-                _navegarParaConta(context, codigo, leitura);
-              },
-              child: Text('Sim'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Text('Não'),
-            ),
-          ],
-        );
-      },
-    );
-  }
+        ],
+      );
+    },
+  );
+}
 
-  void _navegarParaConta(BuildContext context, String codigo, String leitura) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) {
-          return Conta(
-            codigo: codigo,
-            leitura: double.parse(leitura),
-          );
-        },
-      ),
-    );
-  }
-
-  String _obterNomeMes(int numeroMes) {
-    const nomesMes = [
-      'Janeiro',
-      'Fevereiro',
-      'Março',
-      'Abril',
-      'Maio',
-      'Junho',
-      'Julho',
-      'Agosto',
-      'Setembro',
-      'Outubro',
-      'Novembro',
-      'Dezembro'
-    ];
-    return nomesMes[numeroMes - 1];
-  }
+void main() {
+  runApp(const MaterialApp(
+    home: Leitura(userId: 1), // Substitua 1 pelo ID do usuário obtido no login
+  ));
 }

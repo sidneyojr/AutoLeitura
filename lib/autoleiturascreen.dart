@@ -18,7 +18,7 @@ class _AutoLeituraScreenState extends State<AutoLeituraScreen>
     super.initState();
 
     _controller = AnimationController(
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 5),
       vsync: this,
     );
 
@@ -35,18 +35,18 @@ class _AutoLeituraScreenState extends State<AutoLeituraScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Autoleitura'),
-      ),
-      body: Center(
-        child: FadeTransition(
-          opacity: _animation,
-          child: const CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+        //appBar: AppBar(
+        //title: const Text('Autoleitura'),
+        //),
+        backgroundColor: Color.fromARGB(255, 217, 230, 247),
+        body: Center(
+          child: FadeTransition(
+            opacity: _animation,
+            child: const CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+            ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 
   @override

@@ -7,20 +7,24 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('AUTO LEITURA - INÍCIO'),
-        backgroundColor:
-            Color.fromARGB(255, 0, 5, 8), // Manter a app bar no azul
-      ),
+      //appBar: AppBar(
+      //centerTitle: true,
+      //title: const Text('TESTE API BANCO - INÍCIO'),
+      //backgroundColor:
+      //  Color.fromARGB(255, 0, 0, 0), // Manter a app bar no azul
+      //),
+      backgroundColor: Color.fromARGB(255, 217, 230, 247),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Seja Bem-Vindo ao sistema de Auto Leitura"),
-            SizedBox(height: 25),
+            Image.asset(
+              'assets/seja_bem_vindo.png',
+              width: 200,
+              height: 200,
+            ),
             Material(
-              color: Colors.blueAccent, // Azul mais claro
+              color: Color.fromARGB(255, 15, 76, 129), // Azul mais claro
               borderRadius: BorderRadius.circular(20.0),
               child: InkWell(
                 borderRadius: BorderRadius.circular(20.0),

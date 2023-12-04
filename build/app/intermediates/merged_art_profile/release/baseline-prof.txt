@@ -749,11 +749,6 @@ PLandroidx/lifecycle/ReportFragment;->onDestroy()V
 PLandroidx/lifecycle/ReportFragment;->onPause()V
 PLandroidx/lifecycle/ReportFragment;->onStop()V
 
-# Baseline Profile Rules for androidx.startup
-
-Landroidx/startup/AppInitializer;
-HSPLandroidx/startup/AppInitializer;->**(**)**
-
 # Baseline profiles for lifecycle-livedata-core
 
 HSPLandroidx/lifecycle/LiveData$1;-><init>(Landroidx/lifecycle/LiveData;)V
@@ -794,4 +789,9 @@ HSPLandroidx/lifecycle/MediatorLiveData;->removeSource(Landroidx/lifecycle/LiveD
 HSPLandroidx/lifecycle/MutableLiveData;-><init>()V
 HSPLandroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 PLandroidx/lifecycle/LiveData$LifecycleBoundObserver;->detachObserver()V
+
+# Baseline Profile Rules for androidx.startup
+
+Landroidx/startup/AppInitializer;
+HSPLandroidx/startup/AppInitializer;->**(**)**
 

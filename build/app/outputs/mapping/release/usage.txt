@@ -6277,6 +6277,19 @@ com.example.autoleitura2.R$styleable
 com.example.autoleitura2.R$xml
 com.example.autoleitura2.R
 com.google.common.util.concurrent.ListenableFuture
+com.yendoplan.openappfile.BuildConfig
+com.yendoplan.openappfile.R$attr
+com.yendoplan.openappfile.R$color
+com.yendoplan.openappfile.R$dimen
+com.yendoplan.openappfile.R$drawable
+com.yendoplan.openappfile.R$id
+com.yendoplan.openappfile.R$integer
+com.yendoplan.openappfile.R$layout
+com.yendoplan.openappfile.R$string
+com.yendoplan.openappfile.R$style
+com.yendoplan.openappfile.R$styleable
+com.yendoplan.openappfile.R$xml
+com.yendoplan.openappfile.R
 io.flutter.BuildConfig
 io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
@@ -9589,7 +9602,6 @@ kotlin.collections.MapsKt__MapsKt:
     public static final java.util.Map mapKeys(java.util.Map,kotlin.jvm.functions.Function1)
     public static final java.util.Map mapKeysTo(java.util.Map,java.util.Map,kotlin.jvm.functions.Function1)
     private static final java.util.Map mapOf()
-    public static final varargs java.util.Map mapOf(kotlin.Pair[])
     public static final java.util.Map mapValues(java.util.Map,kotlin.jvm.functions.Function1)
     public static final java.util.Map mapValuesTo(java.util.Map,java.util.Map,kotlin.jvm.functions.Function1)
     public static final java.util.Map minus(java.util.Map,java.lang.Iterable)
@@ -9615,14 +9627,12 @@ kotlin.collections.MapsKt__MapsKt:
     private static final void plusAssign(java.util.Map,kotlin.sequences.Sequence)
     private static final void plusAssign(java.util.Map,kotlin.Pair[])
     public static final void putAll(java.util.Map,kotlin.sequences.Sequence)
-    public static final void putAll(java.util.Map,kotlin.Pair[])
     private static final java.lang.Object remove(java.util.Map,java.lang.Object)
     private static final void set(java.util.Map,java.lang.Object,java.lang.Object)
     public static final java.util.Map toMap(java.util.Map,java.util.Map)
     public static final java.util.Map toMap(kotlin.sequences.Sequence)
     public static final java.util.Map toMap(kotlin.sequences.Sequence,java.util.Map)
     public static final java.util.Map toMap(kotlin.Pair[])
-    public static final java.util.Map toMap(kotlin.Pair[],java.util.Map)
     private static final kotlin.Pair toPair(java.util.Map$Entry)
 kotlin.collections.MapsKt___MapsJvmKt:
     public void <init>()
@@ -11050,7 +11060,13 @@ kotlin.text.CharsKt__CharKt:
     public static final boolean isSurrogate(char)
     private static final java.lang.String plus(char,java.lang.String)
     public static final java.lang.String titlecase(char)
-kotlin.text.Charsets
+kotlin.text.Charsets:
+    private static java.nio.charset.Charset utf_32
+    private static java.nio.charset.Charset utf_32be
+    private static java.nio.charset.Charset utf_32le
+    public final java.nio.charset.Charset UTF32()
+    public final java.nio.charset.Charset UTF32_BE()
+    public final java.nio.charset.Charset UTF32_LE()
 kotlin.text.CharsetsKt
 kotlin.text.DelimitedRangesSequence$iterator$1:
     public final int getCounter()

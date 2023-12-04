@@ -813,7 +813,7 @@
     },
     {
         "merged": "com.example.autoleitura2.app-merged_res-25:/xml_filepaths.xml.flat",
-        "source": "com.example.autoleitura2.app-packaged_res-26:/xml/filepaths.xml"
+        "source": "com.example.autoleitura2.app-packaged_res-27:/xml/filepaths.xml"
     },
     {
         "merged": "com.example.autoleitura2.app-merged_res-25:/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -910,6 +910,10 @@
     {
         "merged": "com.example.autoleitura2.app-merged_res-25:/anim_abc_slide_in_bottom.xml.flat",
         "source": "com.example.autoleitura2.app-appcompat-1.6.1-5:/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "com.example.autoleitura2.app-merged_res-25:/xml_openappfile_filepaths.xml.flat",
+        "source": "com.example.autoleitura2.app-packaged_res-26:/xml/openappfile_filepaths.xml"
     },
     {
         "merged": "com.example.autoleitura2.app-merged_res-25:/color_abc_hint_foreground_material_light.xml.flat",

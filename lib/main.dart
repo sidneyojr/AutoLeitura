@@ -10,8 +10,13 @@ class AutoLeitura extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: AutoLeituraScreen(),
+    return MaterialApp(
+      title: 'Teste API',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.black,
+      ),
+      home: const AutoLeituraScreen(),
     );
   }
 }
