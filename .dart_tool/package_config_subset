@@ -82,6 +82,10 @@ glob
 2.19
 file:///home/sidney/.pub-cache/hosted/pub.dev/glob-2.1.2/
 file:///home/sidney/.pub-cache/hosted/pub.dev/glob-2.1.2/lib/
+http
+3.0
+file:///home/sidney/.pub-cache/hosted/pub.dev/http-1.1.0/
+file:///home/sidney/.pub-cache/hosted/pub.dev/http-1.1.0/lib/
 http_multi_server
 2.12
 file:///home/sidney/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/
@@ -174,6 +178,10 @@ qr
 2.16
 file:///home/sidney/.pub-cache/hosted/pub.dev/qr-3.0.1/
 file:///home/sidney/.pub-cache/hosted/pub.dev/qr-3.0.1/lib/
+scoped_model
+2.12
+file:///home/sidney/.pub-cache/hosted/pub.dev/scoped_model-2.0.0/
+file:///home/sidney/.pub-cache/hosted/pub.dev/scoped_model-2.0.0/lib/
 shelf
 2.17
 file:///home/sidney/.pub-cache/hosted/pub.dev/shelf-1.4.1/

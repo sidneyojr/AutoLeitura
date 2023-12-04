@@ -140,6 +140,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "http",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/http-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "http_multi_server",
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1",
       "packageUri": "lib/",
@@ -276,6 +282,12 @@
       "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/qr-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "scoped_model",
+      "rootUri": "file:///home/sidney/.pub-cache/hosted/pub.dev/scoped_model-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "shelf",
@@ -428,7 +440,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-11-14T09:30:17.501376Z",
+  "generated": "2023-11-29T02:18:57.200009Z",
   "generator": "pub",
   "generatorVersion": "3.1.4"
 }
