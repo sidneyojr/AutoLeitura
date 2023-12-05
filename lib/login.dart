@@ -85,7 +85,7 @@ class LoginModel extends Model {
 }
 
 class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+  const Login({super.key});
 
   @override
   _LoginState createState() => _LoginState();
@@ -101,7 +101,7 @@ class _LoginState extends State<Login> {
       child: ScopedModelDescendant<LoginModel>(
         builder: (context, child, model) => Scaffold(
           appBar: AppBar(
-            iconTheme: IconThemeData(color: Colors.black),
+            iconTheme: const IconThemeData(color: Colors.black),
             title: const Text(''),
             backgroundColor: const Color.fromARGB(255, 217, 230, 247),
           ),

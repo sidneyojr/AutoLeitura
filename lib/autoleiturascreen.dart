@@ -2,7 +2,7 @@ import 'package:autoleitura/home.dart';
 import 'package:flutter/material.dart';
 
 class AutoLeituraScreen extends StatefulWidget {
-  const AutoLeituraScreen({Key? key}) : super(key: key);
+  const AutoLeituraScreen({super.key});
 
   @override
   _AutoLeituraScreenState createState() => _AutoLeituraScreenState();
@@ -38,7 +38,7 @@ class _AutoLeituraScreenState extends State<AutoLeituraScreen>
         //appBar: AppBar(
         //title: const Text('Autoleitura'),
         //),
-        backgroundColor: Color.fromARGB(255, 217, 230, 247),
+        backgroundColor: const Color.fromARGB(255, 217, 230, 247),
         body: Center(
           child: FadeTransition(
             opacity: _animation,

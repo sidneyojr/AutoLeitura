@@ -5,7 +5,7 @@ class Conta extends StatefulWidget {
   final String codigo;
   final double leitura;
 
-  const Conta({required this.codigo, required this.leitura});
+  const Conta({super.key, required this.codigo, required this.leitura});
 
   @override
   _ContaState createState() => _ContaState();
@@ -23,7 +23,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
 
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 10),
+      duration: const Duration(seconds: 10),
     );
 
     _animation = CurvedAnimation(
@@ -39,7 +39,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
   void _calcularConta() async {
     // Simulação de um processo demorado
     await Future.delayed(
-        Duration(seconds: 1)); // Simulação de cálculo de 5 segundos
+        const Duration(seconds: 1)); // Simulação de cálculo de 5 segundos
     // Quando o cálculo estiver concluído, interrompe a animação
     _controller.stop();
 
@@ -58,7 +58,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AUTOLEITURA - CONTA'),
+        title: const Text('AUTOLEITURA - CONTA'),
         backgroundColor: Color.fromARGB(255, 0, 5, 8),
       ),
       body: Center(
@@ -68,11 +68,11 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Calculando conta',
                 style: TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               AnimatedBuilder(
                 animation: _animation,
                 builder: (context, child) {
@@ -80,7 +80,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
                     mainAxisSize: MainAxisSize.min,
                     children: List.generate(10, (index) {
                       return Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 4.0),
                         child: Container(
                           width: 3,
                           height: 3,
@@ -91,22 +91,22 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
                   );
                 },
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 'Código: ${widget.codigo}',
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
                 'Leitura Recebida: ${widget.leitura.toStringAsFixed(2)}',
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   _exibirDetalhes(context);
                 },
-                child: Text('Exibir Detalhes'),
+                child: const Text('Exibir Detalhes'),
               ),
             ],
           ),
@@ -120,14 +120,14 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Detalhes da Conta'),
+          title: const Text('Detalhes da Conta'),
           content: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               Text('Leitura Atual: ${widget.leitura.toStringAsFixed(2)}'),
               Text('Leitura Anterior: ${leituraAnterior.toStringAsFixed(2)}'),
-              Text('Valor do Metro Cúbico: R\$ 1.15'),
+              const Text('Valor do Metro Cúbico: R\$ 1.15'),
               Text('Valor Calculado: R\$ ${valorCalculado.toStringAsFixed(2)}'),
             ],
           ),
@@ -142,7 +142,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
               onPressed: () {
                 _aceitarConta(context);
               },
-              child: Text('Aceitar Conta'),
+              child: const Text('Aceitar Conta'),
             ),
           ],
         );

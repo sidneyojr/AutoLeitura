@@ -32,7 +32,7 @@ void main() {
 
   testWidgets('Teste de Login', (WidgetTester tester) async {
     // Construir nossa tela Login e acionar um frame.
-    await tester.pumpWidget(MaterialApp(home: Login()));
+    await tester.pumpWidget(const MaterialApp(home: Login()));
 
     // Aguardar a árvore de widgets se estabilizar.
     await tester.pumpAndSettle();

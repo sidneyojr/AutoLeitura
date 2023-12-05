@@ -10,7 +10,7 @@ Future<void> main() async {
 }
 
 class AutoLeituraApp extends StatelessWidget {
-  const AutoLeituraApp({Key? key}) : super(key: key);
+  const AutoLeituraApp({super.key});
 
   @override
   Widget build(BuildContext context) {

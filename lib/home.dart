@@ -2,7 +2,7 @@ import 'package:autoleitura/login.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
       //backgroundColor:
       //  Color.fromARGB(255, 0, 0, 0), // Manter a app bar no azul
       //),
-      backgroundColor: Color.fromARGB(255, 217, 230, 247),
+      backgroundColor: const Color.fromARGB(255, 217, 230, 247),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,22 +24,23 @@ class Home extends StatelessWidget {
               height: 200,
             ),
             Material(
-              color: Color.fromARGB(255, 15, 76, 129), // Azul mais claro
+              color: const Color.fromARGB(255, 15, 76, 129), // Azul mais claro
               borderRadius: BorderRadius.circular(20.0),
               child: InkWell(
                 borderRadius: BorderRadius.circular(20.0),
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Login()),
+                    MaterialPageRoute(builder: (context) => const Login()),
                   );
                 },
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  decoration: BoxDecoration(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
-                  child: Text(
+                  child: const Text(
                     "Clique para inserir seu código",
                     style: TextStyle(color: Colors.white),
                   ),

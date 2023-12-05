@@ -12,6 +12,7 @@ class GerarPDFScreen extends StatelessWidget {
   final String mesAtual;
 
   GerarPDFScreen({
+    super.key,
     required this.usuario,
     required this.leitura,
     required this.mesAtual,
@@ -21,15 +22,15 @@ class GerarPDFScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AUTOLEITURA - Gerar PDF'),
-        backgroundColor: Color.fromARGB(255, 0, 5, 8),
+        title: const Text('AUTOLEITURA - Gerar PDF'),
+        backgroundColor: const Color.fromARGB(255, 0, 5, 8),
       ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
             _gerarPDF();
           },
-          child: Text('Gerar PDF'),
+          child: const Text('Gerar PDF'),
         ),
       ),
     );
@@ -61,7 +62,7 @@ class GerarPDFScreen extends StatelessWidget {
 
   pw.Widget _buildContaSection() {
     return pw.Container(
-      margin: pw.EdgeInsets.symmetric(vertical: 8.0),
+      margin: const pw.EdgeInsets.symmetric(vertical: 8.0),
       child: pw.Text(
         'Conta',
         style: pw.TextStyle(fontSize: 20, fontWeight: pw.FontWeight.bold),
@@ -71,7 +72,7 @@ class GerarPDFScreen extends StatelessWidget {
 
   pw.Widget _buildUserInfoSection() {
     return pw.Container(
-      margin: pw.EdgeInsets.symmetric(vertical: 8.0),
+      margin: const pw.EdgeInsets.symmetric(vertical: 8.0),
       child: pw.Column(
         crossAxisAlignment: pw.CrossAxisAlignment.start,
         children: [
@@ -84,7 +85,7 @@ class GerarPDFScreen extends StatelessWidget {
 
   pw.Widget _buildLeituraSection() {
     return pw.Container(
-      margin: pw.EdgeInsets.symmetric(vertical: 8.0),
+      margin: const pw.EdgeInsets.symmetric(vertical: 8.0),
       child: pw.Column(
         crossAxisAlignment: pw.CrossAxisAlignment.start,
         children: [
@@ -100,7 +101,7 @@ class GerarPDFScreen extends StatelessWidget {
 
   pw.Widget _buildValorSection() {
     return pw.Container(
-      margin: pw.EdgeInsets.symmetric(vertical: 8.0),
+      margin: const pw.EdgeInsets.symmetric(vertical: 8.0),
       child: pw.Column(
         crossAxisAlignment: pw.CrossAxisAlignment.start,
         children: [
@@ -115,7 +116,7 @@ class GerarPDFScreen extends StatelessWidget {
   pw.Text _buildText(String text) {
     return pw.Text(
       text,
-      style: pw.TextStyle(fontSize: 16),
+      style: const pw.TextStyle(fontSize: 16),
     );
   }
 

@@ -7,7 +7,7 @@ var apiUrl = 'https://api.autoleitura.online/leituras/leituras.php';
 class Leitura extends StatefulWidget {
   final int userId;
 
-  const Leitura({Key? key, required this.userId}) : super(key: key);
+  const Leitura({super.key, required this.userId});
 
   @override
   _LeituraState createState() => _LeituraState();
