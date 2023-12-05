@@ -100,11 +100,11 @@ class _LoginState extends State<Login> {
       model: LoginModel(UserModel()),
       child: ScopedModelDescendant<LoginModel>(
         builder: (context, child, model) => Scaffold(
-          //appBar: AppBar(
-          //title: const Text('AUTO LEITURA - LOGIN'),
-          //backgroundColor: const Color.fromARGB(255, 0, 5, 8),
-          //centerTitle: true,
-          //),
+          appBar: AppBar(
+            iconTheme: IconThemeData(color: Colors.black),
+            title: const Text(''),
+            backgroundColor: const Color.fromARGB(255, 217, 230, 247),
+          ),
           backgroundColor: const Color.fromARGB(255, 217, 230, 247),
           body: Center(
             child: Container(

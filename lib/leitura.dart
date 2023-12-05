@@ -20,6 +20,7 @@ class _LeituraState extends State<Leitura> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
         title: const Text(''),
         backgroundColor: const Color.fromARGB(255, 217, 230, 247),
         //centerTitle: true,
