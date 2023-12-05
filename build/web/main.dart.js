@@ -41682,7 +41682,7 @@ q=3
 n=h.a.c
 h=t.N
 s=6
-return A.Z(A.aEs(A.h1("http://env-2733645.jelastic.saveincloud.net/leituras/leituras.php"),B.bB.Oi(A.az(["codigo",n,"leitura",g],h,t.S),null),A.az(["Content-Type","application/json"],h,h)),$async$$0)
+return A.Z(A.aEs(A.h1("https://api.autoleitura.online/leituras/leituras.php"),B.bB.Oi(A.az(["codigo",n,"leitura",g],h,t.S),null),A.az(["Content-Type","application/json"],h,h)),$async$$0)
 case 6:m=b
 if(m.b===200){h=m
 l=B.bB.e7(0,A.aqf(A.apd(h.e).c.a.h(0,"charset")).e7(0,h.w))
@@ -41722,7 +41722,7 @@ aaS(a){var s=0,r=A.W(t.t6),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$ww=A.X(function(a0,a1){if(a0===1){o=a1
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.Z(A.aDQ(A.h1("http://env-2733645.jelastic.saveincloud.net/usuarios/listar_usuarios.php?id="+a)),$async$ww)
+return A.Z(A.aDQ(A.h1("https://api.autoleitura.online/usuarios/listar_usuarios.php?id="+a)),$async$ww)
 case 7:m=a1
 if(m.b===200){g=m
 l=B.bB.e7(0,A.aqf(A.apd(g.e).c.a.h(0,"charset")).e7(0,g.w))

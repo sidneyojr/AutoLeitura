@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-var apiUrl =
-    'http://env-2733645.jelastic.saveincloud.net/leituras/leituras.php';
+var apiUrl = 'https://api.autoleitura.online/leituras/leituras.php';
 
 class Leitura extends StatefulWidget {
   final int userId;
