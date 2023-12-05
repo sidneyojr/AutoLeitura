@@ -1,4 +1,0 @@
-#Mon Dec 04 19:40:32 BRT 2023
-base.0=/home/sidney/Documentos/FATEC/SEM7DPs/LabEngenhariaSoftware/ProjetoAutoleitura/autoleitura/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
