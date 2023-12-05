@@ -20,9 +20,9 @@ class _LeituraState extends State<Leitura> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AUTO LEITURA - INSERIR LEITURA'),
-        backgroundColor: const Color.fromARGB(255, 0, 5, 8),
-        centerTitle: true,
+        title: const Text(''),
+        backgroundColor: const Color.fromARGB(255, 217, 230, 247),
+        //centerTitle: true,
       ),
       backgroundColor: Color.fromARGB(255, 217, 230, 247),
       body: Center(

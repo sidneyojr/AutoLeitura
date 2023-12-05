@@ -1,0 +1,47 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:1:1-18:12
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:1:1-18:12
+	package
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+		INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:5:5-17:19
+provider#com.yendoplan.openappfile.FileProvider
+ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:6:9-16:20
+	android:grantUriPermissions
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:10:13-47
+	android:authorities
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:8:13-90
+	android:exported
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:9:13-37
+	tools:replace
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:11:13-48
+	android:name
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:7:13-66
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:12:13-15:20
+	android:resource
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:14:17-62
+	android:name
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml:13:17-67
+uses-sdk
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+		INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+		ADDED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml
+		INJECTED from /home/sidney/.pub-cache/hosted/pub.dev/open_app_file-4.0.2/android/src/main/AndroidManifest.xml

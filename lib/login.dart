@@ -100,12 +100,12 @@ class _LoginState extends State<Login> {
       model: LoginModel(UserModel()),
       child: ScopedModelDescendant<LoginModel>(
         builder: (context, child, model) => Scaffold(
-          appBar: AppBar(
-            title: const Text('AUTO LEITURA - LOGIN'),
-            backgroundColor: const Color.fromARGB(255, 0, 5, 8),
-            centerTitle: true,
-          ),
-          backgroundColor: Color.fromARGB(255, 217, 230, 247),
+          //appBar: AppBar(
+          //title: const Text('AUTO LEITURA - LOGIN'),
+          //backgroundColor: const Color.fromARGB(255, 0, 5, 8),
+          //centerTitle: true,
+          //),
+          backgroundColor: const Color.fromARGB(255, 217, 230, 247),
           body: Center(
             child: Container(
               padding: const EdgeInsets.all(16),
@@ -126,7 +126,8 @@ class _LoginState extends State<Login> {
                   ),
                   const SizedBox(height: 20.0),
                   Material(
-                    color: Color.fromARGB(255, 15, 76, 129), // Azul mais claro
+                    color: const Color.fromARGB(
+                        255, 15, 76, 129), // Azul mais claro
                     borderRadius: BorderRadius.circular(20.0),
                     child: InkWell(
                       borderRadius: BorderRadius.circular(20.0),
@@ -156,17 +157,19 @@ class _LoginState extends State<Login> {
                             _mostrarDialog(context, 'Usuário não encontrado');
                           }
                         } catch (error) {
-                          print('Erro ao validar código: $error');
+                          if (kDebugMode) {
+                            print('Erro ao validar código: $error');
+                          }
                           _mostrarDialog(context, 'Código inválido');
                         }
                       },
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 10),
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Text(
+                        child: const Text(
                           'Enviar para Validação',
                           style: TextStyle(color: Colors.white),
                         ),
