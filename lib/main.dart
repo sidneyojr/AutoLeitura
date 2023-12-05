@@ -1,21 +1,21 @@
 import 'package:autoleitura/autoleiturascreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-// DotEnv dotenv = DotEnv() is automatically called during import.
-// If you want to load multiple dotenv files or name your dotenv object differently, you can do the following and import the singleton into the relavant files:
-// DotEnv another_dotenv = DotEnv()
+Future<void> main() async {
+  // Carregar as configurações do arquivo .env
+  await dotenv.load(fileName: ".env/.env");
 
-void main() {
-  runApp(const AutoLeitura());
+  runApp(const AutoLeituraApp());
 }
 
-class AutoLeitura extends StatelessWidget {
-  const AutoLeitura({super.key});
+class AutoLeituraApp extends StatelessWidget {
+  const AutoLeituraApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Teste API',
+      title: 'Auto Leitura',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.black,
