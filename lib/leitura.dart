@@ -20,12 +20,12 @@ class _LeituraState extends State<Leitura> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         title: const Text(''),
         backgroundColor: const Color.fromARGB(255, 217, 230, 247),
         //centerTitle: true,
       ),
-      backgroundColor: Color.fromARGB(255, 217, 230, 247),
+      backgroundColor: const Color.fromARGB(255, 217, 230, 247),
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(16),
@@ -47,7 +47,8 @@ class _LeituraState extends State<Leitura> {
               ),
               const SizedBox(height: 20.0),
               Material(
-                color: Color.fromARGB(255, 15, 76, 129), // Azul mais claro
+                color:
+                    const Color.fromARGB(255, 15, 76, 129), // Azul mais claro
                 borderRadius: BorderRadius.circular(20.0),
                 child: InkWell(
                   borderRadius: BorderRadius.circular(20.0),
