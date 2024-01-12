@@ -87,11 +87,12 @@ class _LeituraState extends State<Leitura> {
                     }
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    decoration: BoxDecoration(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
-                    child: Text(
+                    child: const Text(
                       'Inserir Leitura',
                       style: TextStyle(color: Colors.white),
                     ),
