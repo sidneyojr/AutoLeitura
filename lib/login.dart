@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:scoped_model/scoped_model.dart';
 
-var apiUrl = 'https://api.autoleitura.online/usuarios/listar_usuarios.php';
+var apiUrl = 'https://api.autoleitura.online/usuario';
 
 class User {
   final int id;
