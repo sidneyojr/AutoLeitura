@@ -33,7 +33,7 @@ dependencies:
   pdf: ^3.10.7
   open_file: ^3.0.0
   open_app_file: ^4.0.2
-  http: ^1.1.2
+  http: ^1.1.0
   scoped_model: ^2.0.0
 
 

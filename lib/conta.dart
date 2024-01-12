@@ -8,6 +8,7 @@ class Conta extends StatefulWidget {
   const Conta({super.key, required this.codigo, required this.leitura});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ContaState createState() => _ContaState();
 }
 
@@ -59,11 +60,11 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         title: const Text('AUTOLEITURA - CONTA'),
-        backgroundColor: Color.fromARGB(255, 0, 5, 8),
+        backgroundColor: const Color.fromARGB(255, 0, 5, 8),
       ),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -136,7 +137,7 @@ class _ContaState extends State<Conta> with TickerProviderStateMixin {
               onPressed: () {
                 Navigator.pop(context); // Fecha o diálogo
               },
-              child: Text('Cancelar'),
+              child: const Text('Cancelar'),
             ),
             ElevatedButton(
               onPressed: () {
