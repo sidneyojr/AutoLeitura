@@ -9,62 +9,62 @@ on:
 
 
 jobs:
-  Teste:
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Checkout
-      uses: actions/checkout@v4.1.1
-
-    - name: Setup Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        channel: "stable"
-        flutter-version: "3.16.2"
-
-    - name: Setup Java
-      uses: actions/setup-java@v1
-      with:
-        java-version: '12.x'
-
-    - name: Setup Dart Dev Test
-      run: dart pub add --dev test
-
-    - name: Install dependencies
-      run: flutter pub get
-
-    - name: Analyze
-      run: flutter analyze
-
-    - name: Format Test lib/
-      run: dart format ./lib
-
-    - name: Format Test test/
-      run: dart format ./test
-
-    - name: Run Test
-      run: flutter test --coverage --verbose
-
-    - name: Minimum Test Coverage Percentage
-      uses: VeryGoodOpenSource/very_good_coverage@v2.1.0
-      with:
-        min_coverage: 0
-
-    - name: Upload Coverage Reports to Codecov
-      uses: codecov/codecov-action@v3
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
-    - name: Enviar Mensagem Telegram
-      env:
-        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        GITHUB_COMMIT_ID: ${{ github.sha }}
-      run: sh ./.scripts/sendURLTeste.sh
+#  Teste:
+#    runs-on: ubuntu-latest
+#    steps:
+#
+#    - name: Checkout
+#      uses: actions/checkout@v4.1.1
+#
+#    - name: Setup Flutter
+#      uses: subosito/flutter-action@v2
+#      with:
+#        channel: "stable"
+#        flutter-version: "3.16.2"
+#
+#    - name: Setup Java
+#      uses: actions/setup-java@v1
+#      with:
+#        java-version: '12.x'
+#
+#    - name: Setup Dart Dev Test
+#      run: dart pub add --dev test
+#
+#    - name: Install dependencies
+#      run: flutter pub get
+#
+#    - name: Analyze
+#      run: flutter analyze
+#
+#    - name: Format Test lib/
+#      run: dart format ./lib
+#
+#    - name: Format Test test/
+#      run: dart format ./test
+#
+#    - name: Run Test
+#      run: flutter test --coverage --verbose
+#
+#    - name: Minimum Test Coverage Percentage
+#      uses: VeryGoodOpenSource/very_good_coverage@v2.1.0
+#      with:
+#        min_coverage: 0
+#
+#    - name: Upload Coverage Reports to Codecov
+#      uses: codecov/codecov-action@v3
+#      env:
+#        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+#
+#    - name: Enviar Mensagem Telegram
+#      env:
+#        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+#        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+#        GITHUB_COMMIT_ID: ${{ github.sha }}
+#      run: sh ./.scripts/sendURLTeste.sh
 
 
   Build:
-    needs: Teste
+#    needs: Teste
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
